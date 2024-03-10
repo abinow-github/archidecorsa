@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>archidecorsa</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- bootsrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- swiper -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- lord-icon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+    <header>
+      <!-- social media div -->
+      <div class="sc-media-cnct-div hide-on-md hide-on-sm">
+        <div class="sc-media">
+          <ul>
+          <li>
+            <a class="facebook" href="https://www.facebook.com/archidecor.sa/">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="youtube" href="https://www.youtube.com/channel/UCaWQY56iAAo4gkezyIH5NSA?view_as=subscriber">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a class="instagram" href="https://www.instagram.com/archidecor.sa">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <!-- social media div  END-->
+
+      <!-- navbar -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home"><img src="assets/img/logo/archidecorsa-logo.png" class="logo-img" alt="" srcset=""></a>
+
+              <div class="sandwitch-icon" onclick="showNav()">
+                <svg id="hamburger-minified" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 142 142" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="cursor:pointer"><path id="hamburger-minified-u-first" d="M43,50.28h70c9,0,18.79-2,18.79-11.81c0-6.9-7.25-12.84-17.41-9.08C106,32.49,97.7,44.3,91.72,50.28L50.28,91.72" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="208.02" stroke-dasharray="56,152.02"/><path id="hamburger-minified-u-second" d="M113,83v-42c0-6.627417-5.372583-12-12-12h-60c-6.627417,0-12,5.372583-12,12v60c0,6.627417,5.372583,12,12,12h60c6.627417,0,12-5.372583,12-12v-18c0-6.627417-5.372583-12-12-12h-58" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="56" stroke-dasharray="56,336.26"/><path id="hamburger-minified-u-third" d="M99,91.72h-56c-24.45,0-37.24-12.28-37.24-28.13c0-19.66,24.08-33.75,44.52-13.31L91.72,91.72" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="227.77" stroke-dasharray="56,171.77"/>
+                  <script><![CDATA[
+                  (function(s,i,u,o,c,w,d,t,n,x,e,p,a,b){(a=document.getElementById(i.root)).svgatorPlayer={ready:(function(a){b=[];return function(c){return c?(b.push(c),a.svgatorPlayer):b}})(a)};w[o]=w[o]||{};w[o][s]=w[o][s]||[];w[o][s].push(i);e=d.createElementNS(n,t);e.async=true;e.setAttributeNS(x,'href',[u,s,'.','j','s','?','v','=',c].join(''));e.setAttributeNS(null,'src',[u,s,'.','j','s','?','v','=',c].join(''));p=d.getElementsByTagName(t)[0];p.parentNode.insertBefore(e,p);})('91c80d77',{"root":"hamburger-minified","version":"2022-05-04","animations":[{"elements":{"hamburger-minified-u-first":{"stroke-dashoffset":[{"t":0,"v":208.02,"e":[0.645,0.045,0.355,1]},{"t":800,"v":58.61}],"stroke-dasharray":[{"t":0,"v":[56,152.02],"e":[0.645,0.045,0.355,1]},{"t":800,"v":[58.61,149.41]}]},"hamburger-minified-u-second":{"stroke-dashoffset":[{"t":0,"v":56,"e":[0.325,0.005,0.9,0.995]},{"t":800,"v":392.26}],"stroke-dasharray":[{"t":0,"v":[56,336.26],"e":[0.325,0.005,0.9,0.995]},{"t":800,"v":[315.41,76.85]}]},"hamburger-minified-u-third":{"stroke-dashoffset":[{"t":0,"v":227.77,"e":[0.645,0.045,0.355,1]},{"t":800,"v":58.61}],"stroke-dasharray":[{"t":0,"v":[56,171.77],"e":[0.645,0.045,0.355,1]},{"t":800,"v":[58.61,169.16]}]}},"s":"MDPA1YzhhMzE3MYzg0RzgxNzA4CMzc4N2U3ZDMDxQTQ5NDdSM2HYzZkEzYjMxNKzM3ODgxNzQ3CMjgzNzhJN2VMJN2QzMTQ5NDGBTM2IzMTc4OHDM3NDgxNzA4GMzc4N2U3ZDgFyMzE0OTQwQzRNiWDMxNzU3OPDdiN2IzMTQ5FNDAzYjMxNzAV3YjgzSzc0STRgxN2Q3MFI4MJzc0MzE0OTc1ENzA3YjgyNzQLzYjMxODI3ZjHc0NzQ3MzMxNJDk0MDNiMzE3INTdmODIzMTQV5NDBHM2YzZjAhj"}],"options":"MDDAyMzgzMmE3YAjdjNjk3YTdjCMmE0MjJhNmJTTNzQ3MTZiNzEMyYTM0MmE2YKjc0NzE2YjczCTzJhNDIyYTdOhNmQ3ZTZkN2KE3YjZkMmE4NUVk/"},'https://cdn.svgator.com/ply/','__SVGATOR_PLAYER__','2022-05-04',window,document,'script','http://www.w3.org/2000/svg','http://www.w3.org/1999/xlink')
+                  ]]></script>
+                  </svg>
+              </div>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link home" aria-current="page" href="home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link about" href="about">about</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link services" href="services">services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link projects" href="projects">projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link contact" href="contact">contact</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+      <!-- navbar-collapse in medium/small devices -->
+      <div class="navbarCollapseMd hide-on-lg" id="navbarCollapseMd">
+
+      </div>
+
+          <!-- banner slider -->
+          <section class="hero-slider hero-style">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-inner slide-bg-image" data-background="assets/img/banner/img-2.jpg">
+                    <div class="container">
+                      <div data-swiper-parallax="300" class="slide-title">
+                        <h2>Our Legacy</h2>
+                      </div>
+                      <div data-swiper-parallax="400" class="slide-text">
+                        <p>EDSCO's approach to every project is marked by a holistic, detail-oriented, and anticipated vision. The wide array of ervices provided by
+                            the company from designtoconstruction services ensureaconsistentfiowqf orkfromthe project's initial its completion.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div data-swiper-parallax="500" class="slide-btns">
+                        <a href="#" class="theme-btn-s2">Register now</a>
+                        <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i> Get Info</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end slide-inner -->
+                </div>
+                <!-- end swiper-slide -->
+          
+                <div class="swiper-slide">
+                  <div class="slide-inner slide-bg-image" data-background="assets/img/banner/img-3.jpg">
+                    <div class="container">
+                      <div data-swiper-parallax="300" class="slide-title">
+                        <h2>Deiver Excellence</h2>
+                      </div>
+                      <div data-swiper-parallax="400" class="slide-text">
+                        <p>E ry e i e asbeen designed from theground up (workflow systems, implementation of expertise in eryarea, technologies
+                            implement localandin natitna standards that esult in successful and rofitable outcomes) thereby aligning'lt o</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div data-swiper-parallax="500" class="slide-btns">
+                        <a href="#" class="theme-btn-s2">Register now</a>
+                        <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i>Get Info</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end slide-inner -->
+                </div>
+                <!-- end swiper-slide -->
+              </div>
+              <!-- end swiper-wrapper -->
+          
+              <!-- swipper controls -->
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </section>
+          
+            <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> -->
+          <!-- banner slider END -->
+    </header>
+
+<!--==================================================================
+   section-1 about
+==================================================================-->
+<section class="section-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 cnt-col">
+                <h4 class="cnt">
+                    Archi Decor is a leading fit-out and MEP service provider having an efficient project management and contracting team. Archi Decor has also a full-fledged, skilled wing undertaking annual maintenance contracts including comprehensive maintenance tasks on Civil and MEP sectors. The maintenance wing provides quality service in a strict schedule, respecting the client’s environment. The wing consists of a group of professionals, experts, and smart workers.
+                </h4>
+            </div>
+            <div class="col-lg-5 img-col">
+                    <img src="assets/img/about-img-1.jpg" alt="" class="about-img">
+            </div>
+        </div>
+    </div>
+</section>
+<!--==================================================================
+   section-1 about END
+==================================================================-->
+
+
+
+<!--==================================================================
+   section-2 companie details
+==================================================================-->
+<section class="section-2">
+    <div class="row">
+
+      <div class="card">
+          <h2>20 +</h2>
+          <h6>YEARS EXPERIENCE</h6>
+      </div>
+
+      <div class="card">
+          <h2>430 +</h2>
+          <h6>AMAZING WORKS</h6>
+      </div>
+
+      <div class="card">
+          <h2>70 +</h2>
+          <h6>HAPPY CLIENTS</h6>
+      </div>
+
+      <div class="card">
+          <h2>170 +</h2>
+          <h6>TALENTED PEOPLE</h6>
+      </div>
+
+    </div>
+</section>
+<!--==================================================================
+   section-2 companie details END
+==================================================================-->
+
+
+
+
+<!--==================================================================
+   section-3 services 
+==================================================================-->
+<section class="section-3">
+  <div class="container">
+    <div class="row head-row mb-4">
+      <h2> our services</h2>
+      <p class="p">
+        Archi Decor plays a key role in creating an attractive unique space from interior fit-out services to display solutions with high-end craftsmanship. We are the leaders in building enticing interiors with a blend of aesthetics and amenity. We provide the finest end-to-end services in proportion to the expectations and needs of the client. Our services include:
+      </p>
+    </div>
+    <div class="row card-row">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
+          <lord-icon src="https://cdn.lordicon.com/hicajugo.json" trigger=""  class="lordIcon"></lord-icon>
+          <h4>INTERIOR FIT-OUT</h4>
+          <p class="p">
+            Archi Decor is the pioneer of the Interior Fit-out sector in the Kingdom of Saudi...
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
+          <lord-icon src="https://cdn.lordicon.com/unukghxb.json" trigger=""  class="lordIcon"></lord-icon>
+          <h4>SURVEYING SERVICES</h4>
+          <p class="p">
+            While it comes to bring a perfect building structure, a survey is mandatory at the... 
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
+          <lord-icon src="https://cdn.lordicon.com/qluhlwas.json" trigger=""  class="lordIcon"></lord-icon>
+          <h4>STRUCTURAL WORKS</h4>
+          <p class="p">
+            Archi Decor has embedded its signature in undertaking Structural concrete and Structural steel designs. We...
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
+          <lord-icon src="https://cdn.lordicon.com/wdmqypko.json" trigger=""  colors="secondary:#9a1b39" class="lordIcon"></lord-icon>
+          <h4>CONSTRUCTION WORKS</h4>
+          <p class="p">
+            Buildings thrive on strong foundations and well-planned structures. Our engineers from various fields work to...
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
+          <lord-icon src="https://cdn.lordicon.com/ooqjfqqs.json" trigger=""  class="lordIcon"></lord-icon>
+          <h4>MAINTENANCE SERVICES</h4>
+          <p class="p">
+            The Maintenance wing of Archi Decor has a systematic working structure. The assigned or invited...
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
+          <lord-icon src="https://cdn.lordicon.com/xdilbjfn.json" trigger=""  class="lordIcon"></lord-icon>
+          <h4>ELECTRICAL WORKS</h4>
+          <p class="p">
+            Archi Decor provides the best Electrical and Electrical Maintenance services. It ranges from Electric Load... 
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
+          <lord-icon src="https://cdn.lordicon.com/jdalicnn.json" trigger=""  class="lordIcon"></lord-icon>
+          <h4>MECHANICAL SERVICES</h4>
+          <p class="p">
+            Archi Decor has a strong pillar for the Mechanical works who provides perfect end-to-end mechanical...
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
+          <lord-icon src="https://cdn.lordicon.com/fwlababq.json" trigger="" class="lordIcon"></lord-icon>
+          <h4>DISPLAY SOLUTIONS</h4>
+          <p class="p">
+            Archi Decor is a manufacturer and distributor of display solutions such as various kinds of...
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
+          <lord-icon src="https://cdn.lordicon.com/yofjyupq.json" trigger="" class="lordIcon"></lord-icon>
+          <h4>ARCHITECTURE, INTERIOR DESIGNING & CONSULTANCY</h4>
+          <p class="p">
+            While Archi Decor is a leader in interior solutions for the luxury retail and commercial...
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--==================================================================
+   section-3 services END
+==================================================================-->
+
+
+
+<!--==================================================================
+   section-4 projects
+==================================================================-->
+<section class="section-4">
+  <div class="container">
+    <div class="row head-row mb-4">
+      <h2>LATEST PROJECTS</h2>
+      <p class="p">
+        We are overwhelmed to showcase our latest projects that are met with innovative ideas and skilled actions. The premium outputs are always developed with the help of advanced machinery, the finest quality materials, and a group of talented Craftsmen. Here, we bring a chance for you to get amused at these marvelous structures.
+      </p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row card-sliderr">
+      <section class="section-1-2 scr-anime logo-sldr col-lg-12 mt-4">
+        <section class="project-slider">
+
+  
+ 
+
+        <div class="slide">
+          <a class="card" href="projects">
+            <div class="img-div"><img src="info/Blue Bell Commercial.jpeg" alt=""></div>
+            <div class="card-body">
+              <div class="popertie-name">Blue Bell Commercial</div>
+              <div class="price"></div>
+              
+              
+            </div>
+            
+          </a>
+        </div>
+
+        <div class="slide">
+          <a class="card">
+            <div class="img-div"><img src="info/IBIS HOTEL.jpg" alt=""></div>
+            <div class="card-body">
+              <div class="popertie-name">IBIS HOTEL</div>
+              <div class="price"></div>
+              
+              
+            </div>
+            
+          </a>
+        </div>
+
+        <div class="slide">
+          <a class="card">
+            <div class="img-div"><img src="info/L'OCCITANE.png" alt=""></div>
+            <div class="card-body">
+              <div class="popertie-name">L'OCCITANE</div>
+              <div class="price"></div>
+              
+              
+            </div>
+            
+          </a>
+        </div>
+
+        <div class="slide">
+          <a class="card">
+            <div class="img-div"><img src="info/STARBUCKS.jpg" alt=""></div>
+            <div class="card-body">
+              <div class="popertie-name">STARBUCKS</div>
+              <div class="price">coffee</div>
+              
+              
+            </div>
+            
+          </a>
+        </div>
+
+        <div class="slide">
+          <div class="card">
+            <div class="img-div"><img src="info/TIDEL PARK.jpg" alt=""></div>
+            <div class="card-body">
+              <div class="popertie-name">TIDEL PARK</div>
+              <div class="price"></div>
+              
+              
+            </div>
+            
+          </div>
+        </div>
+        
+
+        
+             </section>
+    </section>
+    </div>
+  </div>
+</section>
+<!--==================================================================
+   section-4 projects END
+==================================================================-->
+
+
+
+<!--==================================================================
+   section-5 clients 
+==================================================================-->
+<section class="section-5">
+  <div class="container">
+    <div class="row head-row mb-4">
+      <h2>OUR CLIENTS</h2>
+      <p class="p">
+        Small or big, no matter what. Every client of Archi décor is treated with keen attention always. We believe being a family brings the most successful and interesting interior outputs. Hence, every client is handled here with extreme care to meet all the needs and expectations in the best way possible. Let’s have a look at our content clients:
+      </p>
+    </div>
+    <div class="row">
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card">
+          <img src="assets/img/logo/clients/starbucks.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card">
+          <img src="assets/img/logo/clients/american-eagle-outfitters-logo.svg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card">
+          <img src="assets/img/logo/clients/the-kooples-vector-logo.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card">
+          <img src="assets/img/logo/clients/GUESS-Logo.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card">
+          <img src="assets/img/logo/clients/h&m-logo.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card">
+          <img src="assets/img/logo/clients/Sony_Make_Believe_logo.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card">
+          <img src="assets/img/logo/clients/jo-malone-london-.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card">
+          <img src="assets/img/logo/clients/heuer-hd-logo.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--==================================================================
+   section-5 clients END
+==================================================================-->
+
+
+
+
+<!--==================================================================
+   footer
+==================================================================-->
+<footer class="footer-section" id="footer">
+  <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fas fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>+966 53 555 0736</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fas fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>+91 8129 466 183</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="far fa-envelope-open"></i>
+                      <div class="cta-text">
+                          <h4>Mail us</h4>
+                          <span>info@archidecorsa.com</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-3 col-lg-3 mb-50" style="display: flex;flex-direction: column;justify-content: space-between;">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          <a href="index.html"><img src="assets/img/logo/archidecorsa-logo-white.png" class="img-fluid" alt="logo"></a>
+                      </div>
+                      <div class="footer-text">
+                          <p></p>
+                      </div>
+                  </div>
+                  <div class="footer-social-icons">
+                    <ul>
+                      <li>
+                        <a class="facebook" href="https://www.facebook.com/archidecor.sa/">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="youtube" href="https://www.youtube.com/channel/UCaWQY56iAAo4gkezyIH5NSA?view_as=subscriber">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <i class="fa-brands fa-youtube"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="instagram" href="https://www.instagram.com/archidecor.sa">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                  <div class="footer-widget a">
+                      <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                      </div>
+                      <ul>
+                        <li><a href="home" data-replace="Home" ><span>Home</span></a></li>
+                        <li><a href="about" data-replace="About" ><span>About</span></a></li>
+                        <li><a href="services" data-replace="Services" ><span>Services</span></a></li>
+                        <li><a href="projects" data-replace="Projects" ><span>Projects</span></a></li>
+                        <li><a href="contact" data-replace="Contact" ><span>Contact</span></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 mb-50">
+                  <div class="footer-widget a">
+                      <div class="footer-widget-heading">
+                          <h3>Head Office</h3>
+                      </div>
+                      <ul>
+                        <li>🏠 53, 80 Feet Road Koramangala, Bangalore , India - 560034</li>
+                        <li><a href="">Tel +91 8042107382</a></li>
+                        <li><a href="">Fax +91 8042107372</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 mb-50">
+                  <div class="footer-widget a">
+                      <div class="footer-widget-heading">
+                          <h3>Office</h3>
+                      </div>
+                      <ul>
+                        <li>🏠 Al Madeena Al Munawwarah Road Next to Sari street flyover, Faisaliyyah Dist. P.O Box : 2150 Jeddah 23442, KSA</li>
+                          <hr style="opacity: 1;background: white;">
+                        <li>🏠 Al Sheikh Salman Bin Hamad Al Khalifa street Al Malaz, Riyadh</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2024, All Right Reserved <!-- <a href="https://codepen.io/anupkumar92/">Anup</a> --></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+    
+    <!-- swiper -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Then include Slick slider script -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <!-- bootsrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
