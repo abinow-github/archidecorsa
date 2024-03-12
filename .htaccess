@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^home$ index.html [L]
+RewriteRule ^about$ about.html [L]
+RewriteRule ^contact$ contacts.html [L]
+RewriteRule ^contactus$ contacts.html [L]
+
+RewriteRule ^services$ services.html [L]
+RewriteRule ^projects$ projects.html [L]
+
+RewriteRule ^blog$ blog.html [L]
+RewriteRule ^blog-details$ blog-details.html [L]
+
+RewriteRule ^project-details$ project-details.html [L]
+
+
+RewriteRule ^interior-fit-out$ interior-fit-out.html [L]
+
+
