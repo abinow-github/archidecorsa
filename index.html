@@ -157,7 +157,7 @@
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="slide-inner slide-bg-image" data-background="assets/img/banner/img-2.jpg">
+                  <div class="slide-inner slide-bg-image" data-background="assets/img/banner/img-4.jpg">
                     <div class="container">
                       <div data-swiper-parallax="300" class="slide-title">
                         <h2>Our Legacy</h2>
@@ -177,7 +177,7 @@
                 <!-- end swiper-slide -->
           
                 <div class="swiper-slide">
-                  <div class="slide-inner slide-bg-image" data-background="assets/img/banner/img-3.jpg">
+                  <div class="slide-inner slide-bg-image" data-background="assets/img/banner/img-6.jpg">
                     <div class="container">
                       <div data-swiper-parallax="300" class="slide-title">
                         <h2>Deiver Excellence</h2>
@@ -222,7 +222,7 @@
                 </h4>
             </div>
             <div class="col-lg-5 img-col">
-                    <img src="assets/img/about-img-1.jpg" alt="" class="about-img">
+                    <img src="assets/img/about/img-2.jpg" alt="" class="about-img">
             </div>
         </div>
     </div>
@@ -239,28 +239,42 @@
 <section class="section-2">
     <div class="row">
 
-      <div class="card">
-          <h2>20 +</h2>
+      <div class="card" onmousemove="hideNum(this)" onmouseleave="showNum(this, 20)">
+          <div class="d-flex justify-content-center align-items-center"><h2 class="count-digit a">20</h2> <h2>+</h2>
+          </div>
           <h6>YEARS EXPERIENCE</h6>
       </div>
 
-      <div class="card">
-          <h2>430 +</h2>
+      <div class="card" onmousemove="hideNum(this)" onmouseleave="showNum(this, 430)">
+          <div class="d-flex justify-content-center align-items-center"><h2 class="count-digit b">430</h2> <h2>+</h2>
+          </div>
           <h6>AMAZING WORKS</h6>
       </div>
 
-      <div class="card">
-          <h2>70 +</h2>
+      <div class="card" onmousemove="hideNum(this)" onmouseleave="showNum(this, 70)">
+          <div class="d-flex justify-content-center align-items-center"><h2 class="count-digit c">70</h2> <h2>+</h2>
+          </div>
           <h6>HAPPY CLIENTS</h6>
       </div>
 
-      <div class="card">
-          <h2>170 +</h2>
+      <div class="card" onmousemove="hideNum(this)" onmouseleave="showNum(this, 170)">
+          <div class="d-flex justify-content-center align-items-center"><h2 class="count-digit d">170</h2> <h2>+</h2>
+          </div>
           <h6>TALENTED PEOPLE</h6>
       </div>
 
     </div>
 </section>
+<script>
+   function hideNum(element) {
+    element.querySelector('.count-digit').innerHTML = '';
+}
+function showNum(element, a) {
+    let num = a;
+    element.querySelector('.count-digit').innerHTML = num;
+}
+
+</script>
 <!--==================================================================
    section-2 companie details END
 ==================================================================-->
@@ -392,8 +406,8 @@
       </p>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="row card-sliderr">
+  <div class="container">
+    <!-- <div class="row card-sliderr">
       <section class="section-1-2 scr-anime logo-sldr col-lg-12 mt-4">
         <section class="project-slider">
 
@@ -469,9 +483,76 @@
         
              </section>
     </section>
+    </div> -->
+    <div class="row projects-row">
+
+      <div class="col-md-6 col-lg-4 col-10">
+        <div class="card w-100 ">
+          <div class="card-body">
+            <div class="card-title">Blue Bell Commercial</div>
+            <div class="sub-title"></div>
+            <div class="arrow"><span></span>&#10097;</div>
+          </div>
+          <div class="img-div w-100 card-image-bg">
+            <img src="info/Blue Bell Commercial.jpeg" alt="" class="w-100 h-100 project-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-10">
+        <div class="card w-100 cards">
+          <div class="card-body">
+            <div class="card-title">Blue Bell Commercial</div>
+            <div class="sub-title"></div>
+            <div class="arrow"><span></span>&#10097;</div>
+          </div>
+          <div class="img-div w-100 card-image-bg">
+            <img src="info/STARBUCKS.jpg" alt="" class="w-100 h-100 project-image">
+          </div>
+        </div>
+      </div>
+
+      
+
     </div>
   </div>
 </section>
+<script>
+  class DominantColorFinder {
+      constructor(imageElement, resultElement) {
+          this.imageElement = imageElement;
+          this.resultElement = resultElement;
+          this.colorThief = new ColorThief();
+          this.imageElement.onload = () => {
+              this.findDominantColor();
+          };
+      }
+
+      findDominantColor() {
+          const dominantColor = this.colorThief.getColor(this.imageElement);
+          const dominantColorHex = this.rgbToHex(dominantColor[0], dominantColor[1], dominantColor[2]);
+          this.resultElement.closest('.cards').querySelector('.card-body').style.backgroundColor = dominantColorHex;
+      }
+
+      rgbToHex(r, g, b) {
+          return "#" + this.componentToHex(r) + this.componentToHex(g) + this.componentToHex(b);
+      }
+
+      componentToHex(c) {
+          const hex = c.toString(16);
+          return hex.length == 1 ? "0" + hex : hex;
+      }
+  }
+
+  // Initialize for each image
+  const imageElements = document.querySelectorAll('.project-image');
+  const resultElements = document.querySelectorAll('.card-image-bg');
+
+  for (let i = 0; i < imageElements.length; i++) {
+      new DominantColorFinder(imageElements[i], resultElements[i]);
+  }
+</script>
+  
 <!--==================================================================
    section-4 projects END
 ==================================================================-->
@@ -489,41 +570,50 @@
         Small or big, no matter what. Every client of Archi décor is treated with keen attention always. We believe being a family brings the most successful and interesting interior outputs. Hence, every client is handled here with extreme care to meet all the needs and expectations in the best way possible. Let’s have a look at our content clients:
       </p>
     </div>
-    <div class="row">
+    <div class="button-row row my-5">
+      <button>food</button>  <button>fasion</button>  <button>accessories</button>
+    </div>
+    <div class="row" id="logos-row">
 
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6" --data-category="food">
         <div class="card">
           <img src="assets/img/logo/clients/starbucks.png" alt="">
+          <div class="pos-abs-cat"><i class="fa-solid fa-wine-glass"></i> food</div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6" --data-category="fasion">
         <div class="card">
           <img src="assets/img/logo/clients/american-eagle-outfitters-logo.svg" alt="">
+          <div class="pos-abs-cat">fasion</div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6" --data-category="fasion">
         <div class="card">
           <img src="assets/img/logo/clients/the-kooples-vector-logo.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6" --data-category="fasion">
         <div class="card">
           <img src="assets/img/logo/clients/GUESS-Logo.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6" --data-category="fasion">
         <div class="card">
           <img src="assets/img/logo/clients/h&m-logo.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6"--data-category="accessories">
         <div class="card">
           <img src="assets/img/logo/clients/Sony_Make_Believe_logo.png" alt="">
+          <div class="pos-abs-cat">accessories</div>
         </div>
       </div>
 
@@ -548,6 +638,55 @@
 
 
 
+<!--==================================================================
+                        section-6 brochure-download
+==================================================================-->
+<section class="section-6">
+  <div class="container">
+    <div class="row h-100">
+      <div class="col-lg-6 col-md-4 img-col hide-on-sm">
+        <img src="assets/img/banner/brochure-banner-model1.png" alt="" srcset="">
+      </div>
+      <div class="col-lg-6 col-md-8 cnt-col">
+        <h2 class="title mb-0">Download</h2>
+        <h3 class="sub-title">Our Brochure</h3>
+
+        <div class="book-div d-flex">
+
+          <div class="card">
+            <div class="img-div"><img src="assets/img/banner/brochure-book-en.png" class="w-100" alt=""></div>
+              <div class="card-title">English Profile</div>
+              <button class="download">Download <lord-icon
+                src="https://cdn.lordicon.com/smwmetfi.json"
+                trigger="loop"
+                delay="2000"
+                colors="primary:#ffffff"
+                style="height:20px">
+            </lord-icon></button>
+          </div>
+
+          <div class="card">
+            <div class="img-div"><img src="assets/img/banner/brochure-book-en.png" class="w-100" alt=""></div>
+              <div class="card-title">Arabic Profile</div>
+              <button class="download">Download <lord-icon
+                src="https://cdn.lordicon.com/smwmetfi.json"
+                trigger="loop"
+                delay="2000"
+                colors="primary:#ffffff"
+                style="height:20px">
+            </lord-icon></button>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!--==================================================================
+                        section-6 brochure-download END
+==================================================================-->
+
 
 <!--==================================================================
    footer
@@ -567,6 +706,25 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="assets/js/script.js"></script>
+
+    <script>
+      $(document).ready(function() {
+  $('.card').each(function() {
+    var $img = $(this).find('.project-image');
+    var imgSrc = $img.attr('src');
+    var tempImg = new Image();
+    tempImg.src = imgSrc;
+    tempImg.onload = function() {
+      var vibrant = new Vibrant(tempImg);
+      var swatches = vibrant.swatches();
+      var color = swatches['Vibrant'] ? swatches['Vibrant'].getHex() : null;
+      if (color) {
+        $(this).find('.card-title').css('color', color);
+      }
+    }.bind(this);
+  });
+});
+    </script>
     <!-- bootsrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

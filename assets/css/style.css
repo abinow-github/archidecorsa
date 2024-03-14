@@ -1,9 +1,11 @@
 
 :root{
-  --primary-color:#9a1b39;
+  /* --primary-color:#9a1b39; */
+  --primary-color:#dc5675;
   --secondary-color:#7dc444;
 }
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 /* .............. common styles ........................ */
 .section-1,.section-2,.section-3,.section-4,.section-5,.section-6{
     padding: 50px 0;
@@ -21,7 +23,7 @@ header{
     padding: 0 100px;
 }
 *{
-    font-family: "Andika", sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 @media screen and (max-width:765px) {
   .hide-on-sm{
@@ -362,14 +364,11 @@ header .navbarCollapseMd.show{
                         banner slider
 ==================================================================*/
 
-body {
-  margin: 0;
-  font-family: 'Rajdhani', sans-serif;
-}
 h2 {
       line-height:1.1;
 }
 .hero-slider {
+  font-family: 'Rajdhani', sans-serif;
   width: 100%;
   height: 700px;
   display: -webkit-box;
@@ -708,6 +707,7 @@ a:hover {
   }
   .about-img{
     height: 300px;
+    border-radius: 10px;
   }
 }
 /*==================================================================
@@ -718,6 +718,11 @@ a:hover {
 /*==================================================================
                         section-2 company details END
 ==================================================================*/
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
 .section-2{
   background-color: var(--primary-color);
   color: white;
@@ -736,7 +741,44 @@ a:hover {
     height: 100%;
     width: 100%;
     width: 300px;
-
+    cursor: pointer;
+    transition: 0.4s;
+    .count-digit{
+      transition: --num 1s , display 0s;
+      counter-set: num var(--num);
+    }
+    .count-digit::after {
+      content: counter(num);
+      opacity: 0;
+      display: none;
+    }
+  }
+  .card:hover{
+    transform: translateY(-10px);
+    .count-digit{
+      display: none;
+    }
+    .count-digit{
+      display: block;
+      width: fit-content;
+      opacity: 1;
+    }
+    .count-digit.a{
+      --num: 20;
+    }
+    .count-digit.b{
+      --num: 430;
+    }
+    .count-digit.c{
+      --num: 70;
+    }
+    .count-digit.d{
+      --num: 170;
+    }
+    .count-digit::after{
+      opacity: 1;
+      display: block;
+    }
   }
 }
 /*==================================================================
@@ -986,6 +1028,49 @@ a:hover {
     transform: scaleX(1.1);
   }
 }
+
+.projects-row{/* project cards */
+  .col-lg-4{
+    margin-bottom: 30px;
+  }
+  .card{
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    .card-body{
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .card-title{
+        color: #4e4144;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 1;    
+      }
+      .arrow{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: black;
+        font-size: 20px;
+        span{
+          display: block;
+          height: 3px;
+          width: 30px;
+          background: black;
+        }
+      }
+    }
+    .img-div{
+      height: 270px;
+      img{
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
 }
 /*==================================================================
                         section-4 projects END
@@ -1022,11 +1107,13 @@ a:hover {
       justify-content: center;
       padding: 20px 10px;
       border: 0;
-      background-color: #d1c2c64a;
+      background-color: #f1ebed;
       border-radius: 10px;
       width: 100%;
       height: 180px;
       cursor: pointer;
+      position: relative;
+      transition: 0.4s;
       img{
         filter: invert(50%) sepia(11%) saturate(322%) hue-rotate(182deg) brightness(89%) contrast(93%);
         width: 80%;
@@ -1034,8 +1121,19 @@ a:hover {
         object-fit: contain;
         transition: 0.4s;
       }
+      .pos-abs-cat{
+        position: absolute;
+        padding: 4px 15px;
+        top: 0;
+        border-radius: 0 0 10px 10px;
+        background: #707580ad;
+        color: white;
+      }
     }
     .card:hover{
+      transform: scale(1.1);
+      box-shadow: 0px 0px 0px 1px #61595999;
+      z-index: 1;
       img{
         filter: none;
       }
@@ -1044,6 +1142,121 @@ a:hover {
 }
 /*==================================================================
                         section-5 clients END
+==================================================================*/
+
+
+
+
+
+
+
+/*==================================================================
+                        section-6 brochure-download
+==================================================================*/
+.section-6{
+  padding: 0;
+  margin-bottom: 50px;
+  height: 700px;
+  background: url(../img/banner/brochure-banner-bg1.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  overflow: hidden;
+  .container{
+    z-index: 2;
+    position: relative;
+    height: 100%;
+  }
+  .img-col{
+    display: flex;
+    align-items: flex-end;
+  }
+  .img-col img{
+    height: 600px;
+  }
+
+  .cnt-col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .title{
+      color: white;
+      font-size: 5rem;
+      font-weight: bold;
+    }
+    .sub-title{
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .book-div{/* book */
+      .card{
+        background: transparent;
+        border: 0;
+        text-align: center;
+        width: 240px;
+        .img-div{
+          width: 80%;
+          text-align: center;
+          margin: auto;
+        }
+        .card-title{
+          font-size: 20px;
+          color: white;
+        }
+        .download{
+          border: 0;
+          display: flex;
+          justify-content: space-between;
+          background-color: var(--secondary-color);
+          color: white;
+          width: fit-content;
+          padding: 10px 15px;
+          position: relative;
+          margin: auto;
+          transition: 0.4s;
+          overflow: hidden;
+          lord-icon{
+            color: white;
+          }
+        }
+        .download::before{
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background-color: var(--primary-color);
+          z-index: -1;
+          transform: translateY(100%);
+          transition: 0.4s;
+        }
+        .download:hover{
+          transform: translateY(-5px);
+        }
+        .download:hover::before{
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.section-6::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #b9812c91;
+  backdrop-filter: blur(2px);
+}
+/*==================================================================
+                        section-6 brochure-download END
 ==================================================================*/
 
 

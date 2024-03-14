@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Dominant Color</title>
+    <script src="https://cdn.rawgit.com/lokesh/color-thief/master/dist/color-thief.min.js"></script>
+    <style>
+       
+        .project-image {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="col-md-6 col-lg-4">
+        <div class="card w-100">
+            <div class="card-body">
+                <div class="card-title">Blue Bell Commercial</div>
+                <div class="sub-title"></div>
+                <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"></lord-icon>
+            </div>
+            <div class="img-div w-100 card-image-bg">
+                <img src="STARBUCKS.jpg" alt="" class="w-100 h-100 project-image">
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 col-lg-4">
+        <div class="card w-100">
+            <div class="card-body">
+                <div class="card-title">Blue Bell Commercial</div>
+                <div class="sub-title"></div>
+                <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"></lord-icon>
+            </div>
+            <div class="img-div w-100 card-image-bg">
+                <img src="Blue Bell Commercial.jpeg" alt="" class="w-100 h-100 project-image">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class DominantColorFinder {
+            constructor(imageElement, resultElement) {
+                this.imageElement = imageElement;
+                this.resultElement = resultElement;
+                this.colorThief = new ColorThief();
+                this.imageElement.onload = () => {
+                    this.findDominantColor();
+                };
+            }
+
+            findDominantColor() {
+                const dominantColor = this.colorThief.getColor(this.imageElement);
+                const dominantColorHex = this.rgbToHex(dominantColor[0], dominantColor[1], dominantColor[2]);
+                this.resultElement.closest('.cards').querySelector('.card-body').style.backgroundColor = dominantColorHex;
+            }
+
+            rgbToHex(r, g, b) {
+                return "#" + this.componentToHex(r) + this.componentToHex(g) + this.componentToHex(b);
+            }
+
+            componentToHex(c) {
+                const hex = c.toString(16);
+                return hex.length == 1 ? "0" + hex : hex;
+            }
+        }
+
+        // Initialize for each image
+        const imageElements = document.querySelectorAll('.project-image');
+        const resultElements = document.querySelectorAll('.card-image-bg');
+
+        for (let i = 0; i < imageElements.length; i++) {
+            new DominantColorFinder(imageElements[i], resultElements[i]);
+        }
+    </script>
+</body>
+</html>

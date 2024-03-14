@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Primary Color</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  .card-title {
+    color: #000; /* Default color for the card title */
+  }
+</style>
+</head>
+<body>
+
+<section class="section-4">
+  <div class="container">
+    <div class="row projects-row">
+      <div class="col-md-6 col-lg-4 col-10">
+        <div class="card w-100">
+          <div class="card-body">
+            <div class="card-title">Blue Bell Commercial</div>
+            <div class="sub-title"></div>
+            <div class="arrow"><span></span>&#10097;</div>
+          </div>
+          <div class="img-div w-100 card-image-bg">
+            <img src="Blue Bell Commercial.jpeg" alt="" class="w-100 h-100 project-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-10">
+        <div class="card w-100">
+          <div class="card-body">
+            <div class="card-title">Starbucks</div>
+            <div class="sub-title"></div>
+            <div class="arrow"><span></span>&#10097;</div>
+          </div>
+          <div class="img-div w-100 card-image-bg">
+            <img src="STARBUCKS.jpg" alt="" class="w-100 h-100 project-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+$(document).ready(function() {
+  $('.card').each(function() {
+    var $img = $(this).find('.project-image');
+    var imgSrc = $img.attr('src');
+    var tempImg = new Image();
+    tempImg.src = imgSrc;
+    tempImg.onload = function() {
+      var vibrant = new Vibrant(tempImg);
+      var swatches = vibrant.swatches();
+      var color = swatches['Vibrant'] ? swatches['Vibrant'].getHex() : null;
+      if (color) {
+        $(this).find('.card-title').css('color', color);
+      }
+    }.bind(this);
+  });
+});
+</script>
+
+<!-- External library for color extraction -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/2.1.2/Vibrant.min.js"></script>
+
+</body>
+</html>
