@@ -523,6 +523,7 @@ h2 {
     margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
+    display: none;
 }
 
 @media (min-width: 767px) {
@@ -706,7 +707,7 @@ a:hover {
     display: flex;
   }
   .about-img{
-    height: 300px;
+    width: 80%;
     border-radius: 10px;
   }
 }
@@ -808,40 +809,9 @@ a:hover {
       color: #8f8181;
     }
   }
-  .card-row{
-    .col-lg-4{
-      margin-bottom: 30px;
-    }
-    .card{
-      padding: 10px;
-      padding-left: 15px;
-      height: 100%;
-      border: 0;
-      transition: 0.5s;
-      .p{
-        color: #3f3a3ab3;
-      }
-    }
-    .card:hover{
-      cursor: pointer;
-      box-shadow:  0px 1px 3px 2px #392f2f78;
-      transform: translateY(-10px);
-      h4{
-        text-shadow: none;
-      }
-    }
-    lord-icon{
-      height: 80px;
-      width: 80px;
-      color: var(--secondary-color);
-    }
-    h4{
-      font-weight: 600;
-      text-shadow: 1px 3px 2px #1f1b1c61;
-      color: #d91a47;
-      letter-spacing: 1px;
-      font-size: 1.4rem;
-    }
+  
+  .item__caption-title{
+    text-transform: capitalize;
   }
 }
 /*==================================================================
@@ -1021,7 +991,7 @@ a:hover {
   }
 
   .content {
-    transform: translateY(calc(100% - 4.5rem));
+    transform: translateY(calc(100% - 0.5rem));
   }
   .content > *:not(.title) {
     opacity: 0;
@@ -1082,6 +1052,7 @@ a:hover {
 }
 .card.more .content{
   z-index: 18;
+  margin-bottom: 10px;
 }
 .card.more .copy{
   font-size: 1.3rem;
@@ -1218,12 +1189,14 @@ a:hover {
 .section-6{
   padding: 0;
   margin-bottom: 50px;
-  height: 700px;
+  height: 500px;
   background: url(../img/banner/brochure-banner-bg1.jpg);
   background-size: cover;
   position: relative;
   background-position: center;
   overflow: hidden;
+  border-radius: 10px;
+  margin: 0 20%;
   .container{
     z-index: 2;
     position: relative;
@@ -1234,7 +1207,7 @@ a:hover {
     align-items: flex-end;
   }
   .img-col img{
-    height: 600px;
+    height: 450px;
   }
 
   .cnt-col{
@@ -1243,12 +1216,12 @@ a:hover {
     flex-direction: column;
     .title{
       color: white;
-      font-size: 5rem;
+      font-size: 3rem;
       font-weight: bold;
     }
     .sub-title{
       color: white;
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: bold;
     }
 
@@ -1316,6 +1289,14 @@ a:hover {
   left: 0;
   background: #b9812c91;
   backdrop-filter: blur(2px);
+}
+@media screen and (max-width:992px) {
+  .section-6{
+    margin: 0 10%;
+    .cnt-col{
+      align-items: center;
+    }
+  }
 }
 /*==================================================================
                         section-6 brochure-download END

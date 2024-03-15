@@ -23,6 +23,8 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <link rel="stylesheet" href="smooth-scroll/style.css">
+
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -30,6 +32,10 @@
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
 </head>
 <body>
+  <main>
+    <div data-scroll>
+
+    
     <header>
       <!-- social media div -->
       <div class="sc-media-cnct-div hide-on-md hide-on-sm">
@@ -285,109 +291,117 @@ function showNum(element, a) {
 <!--==================================================================
    section-3 services 
 ==================================================================-->
-<section class="section-3">
-  <div class="container">
-    <div class="row head-row mb-4">
-      <h2> our services</h2>
-      <p class="p">
-        Archi Decor plays a key role in creating an attractive unique space from interior fit-out services to display solutions with high-end craftsmanship. We are the leaders in building enticing interiors with a blend of aesthetics and amenity. We provide the finest end-to-end services in proportion to the expectations and needs of the client. Our services include:
-      </p>
-    </div>
-    <div class="row card-row">
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
-          <lord-icon src="https://cdn.lordicon.com/hicajugo.json" trigger=""  class="lordIcon"></lord-icon>
-          <h4>INTERIOR FIT-OUT</h4>
-          <p class="p">
-            Archi Decor is the pioneer of the Interior Fit-out sector in the Kingdom of Saudi...
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
-          <lord-icon src="https://cdn.lordicon.com/unukghxb.json" trigger=""  class="lordIcon"></lord-icon>
-          <h4>SURVEYING SERVICES</h4>
-          <p class="p">
-            While it comes to bring a perfect building structure, a survey is mandatory at the... 
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
-          <lord-icon src="https://cdn.lordicon.com/qluhlwas.json" trigger=""  class="lordIcon"></lord-icon>
-          <h4>STRUCTURAL WORKS</h4>
-          <p class="p">
-            Archi Decor has embedded its signature in undertaking Structural concrete and Structural steel designs. We...
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
-          <lord-icon src="https://cdn.lordicon.com/wdmqypko.json" trigger=""  colors="secondary:#9a1b39" class="lordIcon"></lord-icon>
-          <h4>CONSTRUCTION WORKS</h4>
-          <p class="p">
-            Buildings thrive on strong foundations and well-planned structures. Our engineers from various fields work to...
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
-          <lord-icon src="https://cdn.lordicon.com/ooqjfqqs.json" trigger=""  class="lordIcon"></lord-icon>
-          <h4>MAINTENANCE SERVICES</h4>
-          <p class="p">
-            The Maintenance wing of Archi Decor has a systematic working structure. The assigned or invited...
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
-          <lord-icon src="https://cdn.lordicon.com/xdilbjfn.json" trigger=""  class="lordIcon"></lord-icon>
-          <h4>ELECTRICAL WORKS</h4>
-          <p class="p">
-            Archi Decor provides the best Electrical and Electrical Maintenance services. It ranges from Electric Load... 
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
-          <lord-icon src="https://cdn.lordicon.com/jdalicnn.json" trigger=""  class="lordIcon"></lord-icon>
-          <h4>MECHANICAL SERVICES</h4>
-          <p class="p">
-            Archi Decor has a strong pillar for the Mechanical works who provides perfect end-to-end mechanical...
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
-          <lord-icon src="https://cdn.lordicon.com/fwlababq.json" trigger="" class="lordIcon"></lord-icon>
-          <h4>DISPLAY SOLUTIONS</h4>
-          <p class="p">
-            Archi Decor is a manufacturer and distributor of display solutions such as various kinds of...
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card" onmouseover="addTrigger(this)" onmouseleave="removeTrigger(this)">
-          <lord-icon src="https://cdn.lordicon.com/yofjyupq.json" trigger="" class="lordIcon"></lord-icon>
-          <h4>ARCHITECTURE, INTERIOR DESIGNING & CONSULTANCY</h4>
-          <p class="p">
-            While Archi Decor is a leader in interior solutions for the luxury retail and commercial...
-          </p>
-        </div>
-      </div>
-
-    </div>
+<div class="section-3 container pb-0">
+  <div class="row head-row mb-4">
+    <h2> our services</h2>
+    <p class="p">
+      Archi Decor plays a key role in creating an attractive unique space from interior fit-out services to display solutions with high-end craftsmanship. We are the leaders in building enticing interiors with a blend of aesthetics and amenity. We provide the finest end-to-end services in proportion to the expectations and needs of the client. Our services include:
+    </p>
   </div>
-</section>
+</div>
+<div class="section-3 container pt-0">
+
+  <div class="row">
+<div class="content mb-4 col-lg-6">
+  <div class="item">
+      <div class="item__img-wrap">
+          <div class="item__img item__img--t1"></div>
+      </div>
+      <div class="item__caption">
+          <h2 class="item__caption-title">Retail fitout</h2>
+          <p class="item__caption-copy">Archi Decor is the pioneer of the Interior Fit-out
+            sector in the Kingdom of Saudi</p>
+      </div>
+  </div>
+</div>
+
+<div class="content mb-4 col-lg-6">
+  <div class="item">
+    <div class="item__img-wrap">
+        <div class="item__img item__img--t2"></div>
+    </div>
+    <div class="item__caption">
+        <h2 class="item__caption-title">Display solutions</h2>
+        <p class="item__caption-copy">Archi Decor is a manufacturer and distributor of
+          display solutions such as various kinds of</p>
+    </div>
+</div>
+</div>
+
+<div class="content mb-4 col-lg-6">
+  <div class="item">
+    <div class="item__img-wrap">
+        <div class="item__img item__img--t2"></div>
+    </div>
+    <div class="item__caption">
+        <h2 class="item__caption-title">electrical works</h2>
+        <p class="item__caption-copy">Archi Decor provides the best Electrical and Electrical Maintenance services.</p>
+    </div>
+</div>
+</div>
+
+<div class="content mb-4 col-lg-6">
+  <div class="item">
+    <div class="item__img-wrap">
+        <div class="item__img item__img--t2"></div>
+    </div>
+    <div class="item__caption">
+        <h2 class="item__caption-title">mechanical services</h2>
+        <p class="item__caption-copy">Archi Decor has a strong pillar for the Mechanical works who provides perfect end-to-end mechanical solutions for all projects.</p>
+    </div>
+</div>
+</div>
+
+<div class="content mb-4 col-lg-6">
+  <div class="item">
+    <div class="item__img-wrap">
+        <div class="item__img item__img--t2"></div>
+    </div>
+    <div class="item__caption">
+        <h2 class="item__caption-title">maintenance services</h2>
+        <p class="item__caption-copy">The Maintenance wing of Archi Decor has a systematic working structure. </p>
+    </div>
+</div>
+</div>
+
+<div class="content mb-4 col-lg-6">
+  <div class="item">
+    <div class="item__img-wrap">
+        <div class="item__img item__img--t2"></div>
+    </div>
+    <div class="item__caption">
+        <h2 class="item__caption-title">construction works</h2>
+        <p class="item__caption-copy">Buildings thrive on strong foundations and well-planned structures</p>
+    </div>
+</div>
+</div>
+
+<div class="content mb-4 col-lg-6">
+  <div class="item">
+    <div class="item__img-wrap">
+        <div class="item__img item__img--t2"></div>
+    </div>
+    <div class="item__caption">
+        <h2 class="item__caption-title">surveying services</h2>
+        <p class="item__caption-copy">While it comes to bring a perfect building structure, a survey is mandatory at the beginning stage. </p>
+    </div>
+</div>
+</div>
+
+<div class="content mb-4 col-lg-6">
+  <div class="item">
+    <div class="item__img-wrap">
+        <div class="item__img item__img--t2"></div>
+    </div>
+    <div class="item__caption">
+        <h2 class="item__caption-title">Interior and designing consultancy</h2>
+        <p class="item__caption-copy">While Archi Decor is a leader in interior solutions for the luxury retail and commercial sectors in the Kingdom of Saudi Arabia,</p>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
 <!--==================================================================
    section-3 services END
 ==================================================================-->
@@ -407,83 +421,7 @@ function showNum(element, a) {
     </div>
   </div>
   <div class="container">
-    <!-- <div class="row card-sliderr">
-      <section class="section-1-2 scr-anime logo-sldr col-lg-12 mt-4">
-        <section class="project-slider">
-
-  
- 
-
-        <div class="slide">
-          <a class="card" href="projects">
-            <div class="img-div"><img src="info/Blue Bell Commercial.jpeg" alt=""></div>
-            <div class="card-body">
-              <div class="popertie-name">Blue Bell Commercial</div>
-              <div class="price"></div>
-              
-              
-            </div>
-            
-          </a>
-        </div>
-
-        <div class="slide">
-          <a class="card">
-            <div class="img-div"><img src="info/IBIS HOTEL.jpg" alt=""></div>
-            <div class="card-body">
-              <div class="popertie-name">IBIS HOTEL</div>
-              <div class="price"></div>
-              
-              
-            </div>
-            
-          </a>
-        </div>
-
-        <div class="slide">
-          <a class="card">
-            <div class="img-div"><img src="info/L'OCCITANE.png" alt=""></div>
-            <div class="card-body">
-              <div class="popertie-name">L'OCCITANE</div>
-              <div class="price"></div>
-              
-              
-            </div>
-            
-          </a>
-        </div>
-
-        <div class="slide">
-          <a class="card">
-            <div class="img-div"><img src="info/STARBUCKS.jpg" alt=""></div>
-            <div class="card-body">
-              <div class="popertie-name">STARBUCKS</div>
-              <div class="price">coffee</div>
-              
-              
-            </div>
-            
-          </a>
-        </div>
-
-        <div class="slide">
-          <a class="card">
-            <div class="img-div"><img src="info/TIDEL PARK.jpg" alt=""></div>
-            <div class="card-body">
-              <div class="popertie-name">TIDEL PARK</div>
-              <div class="price"></div>
-              
-              
-            </div>
-            
-          </a>
-        </div>
-        
-
-        
-             </section>
-    </section>
-    </div> -->
+    
     <div class="row projects-row ">
 
       <div class="col-md-6 col-lg-3 col-10 mb-5">
@@ -568,42 +506,6 @@ function showNum(element, a) {
     </div>
   </div>
 </section>
-<script>
-  class DominantColorFinder {
-      constructor(imageElement, resultElement) {
-          this.imageElement = imageElement;
-          this.resultElement = resultElement;
-          this.colorThief = new ColorThief();
-          this.imageElement.onload = () => {
-              this.findDominantColor();
-          };
-      }
-
-      findDominantColor() {
-          const dominantColor = this.colorThief.getColor(this.imageElement);
-          const dominantColorHex = this.rgbToHex(dominantColor[0], dominantColor[1], dominantColor[2]);
-          this.resultElement.closest('.cards').querySelector('.card-body').style.backgroundColor = dominantColorHex;
-      }
-
-      rgbToHex(r, g, b) {
-          return "#" + this.componentToHex(r) + this.componentToHex(g) + this.componentToHex(b);
-      }
-
-      componentToHex(c) {
-          const hex = c.toString(16);
-          return hex.length == 1 ? "0" + hex : hex;
-      }
-  }
-
-  // Initialize for each image
-  const imageElements = document.querySelectorAll('.project-image');
-  const resultElements = document.querySelectorAll('.card-image-bg');
-
-  for (let i = 0; i < imageElements.length; i++) {
-      new DominantColorFinder(imageElements[i], resultElements[i]);
-  }
-</script>
-  
 <!--==================================================================
    section-4 projects END
 ==================================================================-->
@@ -620,16 +522,16 @@ function showNum(element, a) {
       <p class="p">
         Small or big, no matter what. Every client of Archi décor is treated with keen attention always. We believe being a family brings the most successful and interesting interior outputs. Hence, every client is handled here with extreme care to meet all the needs and expectations in the best way possible. Let’s have a look at our content clients:
       </p>
-    </div>
+    </div><!-- just comment for hide in frontednd coz this function not completed -->
     <div class="button-row row my-5">
-      <button>food</button>  <button>fasion</button>  <button>accessories</button>
+      <button>All</button> <button>food</button>  <button>fasion</button>  <button>accessories</button> <button>perfume</button>
     </div>
     <div class="row" id="logos-row">
 
       <div class="col-lg-3 col-md-4 col-6" --data-category="food">
         <div class="card">
           <img src="assets/img/logo/clients/starbucks.png" alt="">
-          <div class="pos-abs-cat"><i class="fa-solid fa-wine-glass"></i> food</div>
+          <div class="pos-abs-cat">food</div>
         </div>
       </div>
 
@@ -661,22 +563,24 @@ function showNum(element, a) {
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-6"--data-category="accessories">
+      <div class="col-lg-3 col-md-4 col-6" --data-category="accessories">
         <div class="card">
           <img src="assets/img/logo/clients/Sony_Make_Believe_logo.png" alt="">
           <div class="pos-abs-cat">accessories</div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6" --data-category="perfume">
         <div class="card">
           <img src="assets/img/logo/clients/jo-malone-london-.png" alt="">
+          <div class="pos-abs-cat">perfume</div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6" --data-category="accessories">
         <div class="card">
           <img src="assets/img/logo/clients/heuer-hd-logo.png" alt="">
+          <div class="pos-abs-cat">accessories</div>
         </div>
       </div>
 
@@ -696,7 +600,7 @@ function showNum(element, a) {
   <div class="container">
     <div class="row h-100">
       <div class="col-lg-6 col-md-4 img-col hide-on-sm">
-        <img src="assets/img/banner/brochure-banner-model1.png" alt="" srcset="">
+        <img src="assets/img/banner/brochure-banner-model1.png" class="mx-auto" alt="" srcset="">
       </div>
       <div class="col-lg-6 col-md-8 cnt-col">
         <h2 class="title mb-0">Download</h2>
@@ -707,18 +611,6 @@ function showNum(element, a) {
           <div class="card">
             <div class="img-div"><img src="assets/img/banner/brochure-book-en.png" class="w-100" alt=""></div>
               <div class="card-title">English Profile</div>
-              <button class="download">Download <lord-icon
-                src="https://cdn.lordicon.com/smwmetfi.json"
-                trigger="loop"
-                delay="2000"
-                colors="primary:#ffffff"
-                style="height:20px">
-            </lord-icon></button>
-          </div>
-
-          <div class="card">
-            <div class="img-div"><img src="assets/img/banner/brochure-book-en.png" class="w-100" alt=""></div>
-              <div class="card-title">Arabic Profile</div>
               <button class="download">Download <lord-icon
                 src="https://cdn.lordicon.com/smwmetfi.json"
                 trigger="loop"
@@ -776,6 +668,10 @@ function showNum(element, a) {
   });
 });
     </script>
+    </div>
+  </main>
+  <script src="smooth-scroll/imagesloaded.pkgd.min.js"></script>
+  <script src="smooth-scroll/script.js"></script>
     <!-- bootsrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
