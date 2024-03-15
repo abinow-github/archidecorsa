@@ -1,3 +1,19 @@
+/////////preloader function
+var load = document.getElementById("preloader");
+let header = document.getElementById("header-home");
+let heroslider = document.querySelector(".hero-slider");
+function isFullyLoaded() {
+    return header ;
+}
+window.onload = function () {
+    if (isFullyLoaded()) {
+        setTimeout(function () {
+            load.classList.add('hide');
+            heroslider.classList.add('show');
+        }, 1000);
+    }
+};
+
 // HERO SLIDER
 var menu = [];
 jQuery('.swiper-slide').each( function(index){
@@ -102,7 +118,7 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         arrows: false,
         dots: false,
         pauseOnHover: false,
