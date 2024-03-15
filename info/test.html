@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Dominant Color</title>
-    <script src="https://cdn.rawgit.com/lokesh/color-thief/master/dist/color-thief.min.js"></script>
-    <style>
-       
-        .project-image {
-            width: 50px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Categories</title>
+<style>
+  .hide {
+    display: none;
+  }
+  .filter-button.hide{
+    display: flex;
+  }
+</style>
 </head>
 <body>
-    <div class="col-md-6 col-lg-4">
-        <div class="card w-100">
-            <div class="card-body">
-                <div class="card-title">Blue Bell Commercial</div>
-                <div class="sub-title"></div>
-                <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"></lord-icon>
-            </div>
-            <div class="img-div w-100 card-image-bg">
-                <img src="STARBUCKS.jpg" alt="" class="w-100 h-100 project-image">
-            </div>
-        </div>
+
+<section class="section-5">
+  <div class="container">
+    <div class="row head-row mb-4">
+      <h2>OUR CLIENTS</h2>
+      <p class="p">
+        Small or big, no matter what. Every client of Archi décor is treated with keen attention always. We believe being a family brings the most successful and interesting interior outputs. Hence, every client is handled here with extreme care to meet all the needs and expectations in the best way possible. Let’s have a look at our content clients:
+      </p>
     </div>
-    
-    <div class="col-md-6 col-lg-4">
-        <div class="card w-100">
-            <div class="card-body">
-                <div class="card-title">Blue Bell Commercial</div>
-                <div class="sub-title"></div>
-                <lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" trigger="hover"></lord-icon>
-            </div>
-            <div class="img-div w-100 card-image-bg">
-                <img src="Blue Bell Commercial.jpeg" alt="" class="w-100 h-100 project-image">
-            </div>
-        </div>
+    <div class="button-row row my-5">
+      <button class="filter-button" data-category="all">All</button>
+      <button class="filter-button" data-category="food">Food</button>
+      <button class="filter-button" data-category="fasion">Fashion</button>
+      <button class="filter-button" data-category="accessories">Accessories</button>
+      <button class="filter-button" data-category="perfume">Perfume</button>
     </div>
+    <div class="row" id="logos-row">
 
-    <script>
-        class DominantColorFinder {
-            constructor(imageElement, resultElement) {
-                this.imageElement = imageElement;
-                this.resultElement = resultElement;
-                this.colorThief = new ColorThief();
-                this.imageElement.onload = () => {
-                    this.findDominantColor();
-                };
-            }
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="../assets/img/logo/clients/starbucks.png" width="50px" alt="">
+          <div class="pos-abs-cat">Food</div>
+        </div>
+      </div>
 
-            findDominantColor() {
-                const dominantColor = this.colorThief.getColor(this.imageElement);
-                const dominantColorHex = this.rgbToHex(dominantColor[0], dominantColor[1], dominantColor[2]);
-                this.resultElement.closest('.cards').querySelector('.card-body').style.backgroundColor = dominantColorHex;
-            }
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="../assets/img/logo/clients/starbucks.png" width="50px" alt="">
+          <div class="pos-abs-cat">Food</div>
+        </div>
+      </div>
 
-            rgbToHex(r, g, b) {
-                return "#" + this.componentToHex(r) + this.componentToHex(g) + this.componentToHex(b);
-            }
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="../assets/img/logo/clients/starbucks.png" width="50px" alt="">
+          <div class="pos-abs-cat">Fashion</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6" data-category="accessories">
+        <div class="card">
+          <img src="../assets/img/logo/clients/starbucks.png" width="50px" alt="">
+          <div class="pos-abs-cat">Accessories</div>
+        </div>
+      </div>
 
-            componentToHex(c) {
-                const hex = c.toString(16);
-                return hex.length == 1 ? "0" + hex : hex;
-            }
-        }
+      <!-- Other client cards here -->
 
-        // Initialize for each image
-        const imageElements = document.querySelectorAll('.project-image');
-        const resultElements = document.querySelectorAll('.card-image-bg');
+    </div>
+  </div>
+</section>
 
-        for (let i = 0; i < imageElements.length; i++) {
-            new DominantColorFinder(imageElements[i], resultElements[i]);
-        }
-    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".filter-button").click(function(){
+      var category = $(this).data('category');
+      if(category === 'all') {
+        $('[data-category]').removeClass('hide');
+      } else {
+        $('[data-category]').addClass('hide');
+        $('[data-category="' + category + '"]').removeClass('hide');
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
