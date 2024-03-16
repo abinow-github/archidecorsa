@@ -185,6 +185,40 @@ $('.count-digit').each(function () {
 })
 
 
+/////////client logos 
+$(document).ready(function(){
+  $(".filter-button").click(function(){
+    // Remove the 'clicked' class from all buttons
+    $(".filter-button").removeClass("clicked");
+    // Add the 'clicked' class to the currently clicked button
+    $(this).addClass("clicked");
+
+    var category = $(this).data('category');
+    if(category === 'all') {
+      $('[data-category]').removeClass('hide');
+    } else {
+      $('[data-category]').addClass('hide');
+      $('[data-category="' + category + '"]').removeClass('hide');
+    }
+  });
+});
+
+
+
+//////////brochure download / section-6
+function book(){
+  let book=document.getElementById('book')
+  let booktrigger=document.getElementById('book-trigger')
+  var isRevealed = book.classList.contains('reveal');
+    if (isRevealed) {
+        book.classList.remove('reveal');
+        booktrigger.innerHTML='Download'
+    } else {
+        book.classList.add('reveal');
+        booktrigger.innerHTML='Close'
+    }
+}
+
 
 
 

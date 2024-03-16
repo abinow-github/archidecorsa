@@ -123,7 +123,7 @@ a:focus {
         padding: 0 50px;
     }
     .section-3 .content:nth-child(even){
-        padding-top: 300px;
+        padding-top: 100px;
     }
 }
 .section-3 .content:nth-child(even){
