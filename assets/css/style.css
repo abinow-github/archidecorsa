@@ -251,6 +251,14 @@ header{
     opacity: 1;
   }
 }
+@keyframes puff-in-center {
+  0% {
+            background-position: bottom;
+  }
+  100% {
+            background-position: center;
+  }
+}
 
 
 
@@ -559,6 +567,10 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: left;
+}
+.hero-slider .swiper-slide.swiper-slide-active .slide-inner{
+  animation: puff-in-center 1s ease-out both;
+  animation-delay: 0.2s;
 }
 
 .hero-slider .swiper-button-prev,

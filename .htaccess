@@ -7,6 +7,7 @@ RewriteRule ^contact$ contacts.html [L]
 RewriteRule ^contactus$ contacts.html [L]
 
 RewriteRule ^gallery$ gallery.html [L]
+RewriteRule ^images$ gallery.html [L]
 
 RewriteRule ^services$ services.html [L]
 RewriteRule ^projects$ projects.html [L]
