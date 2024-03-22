@@ -19,5 +19,12 @@ RewriteRule ^project-details$ project-details.html [L]
 
 
 RewriteRule ^interior-fit-out$ interior-fit-out.html [L]
+RewriteRule ^display-solutions$ display-solutions.html [L]
+RewriteRule ^electrical-works$ electrical-works.html [L]
+RewriteRule ^mechanical-services$ mechanical-services.html [L]
+RewriteRule ^maintenance-services$ maintenance-services.html [L]
+RewriteRule ^construction-works$ construction-works.html [L]
+RewriteRule ^surveying-services$ surveying-services.html [L]
+RewriteRule ^architecture$ architecture.html [L]
 
 

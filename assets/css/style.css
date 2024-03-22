@@ -234,6 +234,7 @@ header{
   100%{
     transform: scale(0);
     display: none;
+    height: 0 !important;
   }
 }
 
@@ -1207,9 +1208,23 @@ a:hover {
       color: #8f8181;
     }
   }
+  .scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+}
+.scroll-container::-webkit-scrollbar{
+  display: none;
+}
 .button-row{
   gap: 5px;
   border-bottom: 2px solid var(--primary-color);
+  gap: 5px;
+  border-bottom: 2px solid var(--primary-color);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: fit-content;
   button{
     width: fit-content;
     border: 0;
@@ -1217,6 +1232,9 @@ a:hover {
     border-radius: 5px;
     font-size: 18px;
   }
+}
+.button-row::-webkit-scrollbar{
+  display: none;
 }
 .button-row button:hover,
 .button-row button:focus,

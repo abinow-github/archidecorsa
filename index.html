@@ -37,190 +37,191 @@
   <div class="loader"></div>
   </div>
 <body>
+  <header id="header-home">
+    <!-- social media div -->
+    <div class="sc-media-cnct-div hide-on-md hide-on-sm">
+      <div class="sc-media">
+        <ul>
+        <li>
+          <a class="facebook" href="https://www.facebook.com/archidecor.sa/">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a class="youtube" href="https://www.youtube.com/channel/UCaWQY56iAAo4gkezyIH5NSA?view_as=subscriber">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="https://www.instagram.com/archidecor.sa">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <!-- social media div  END-->
+
+    <!-- navbar -->
+      <nav class="navbar navbar-expand-lg" id="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="home"><img src="assets/img/logo/archidecorsa-logo.png" class="logo-img" alt="" srcset=""></a>
+
+            <div class="sandwitch-icon" onclick="showNav()">
+              <svg id="hamburger-minified" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 142 142" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="cursor:pointer"><path id="hamburger-minified-u-first" d="M43,50.28h70c9,0,18.79-2,18.79-11.81c0-6.9-7.25-12.84-17.41-9.08C106,32.49,97.7,44.3,91.72,50.28L50.28,91.72" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="208.02" stroke-dasharray="56,152.02"/><path id="hamburger-minified-u-second" d="M113,83v-42c0-6.627417-5.372583-12-12-12h-60c-6.627417,0-12,5.372583-12,12v60c0,6.627417,5.372583,12,12,12h60c6.627417,0,12-5.372583,12-12v-18c0-6.627417-5.372583-12-12-12h-58" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="56" stroke-dasharray="56,336.26"/><path id="hamburger-minified-u-third" d="M99,91.72h-56c-24.45,0-37.24-12.28-37.24-28.13c0-19.66,24.08-33.75,44.52-13.31L91.72,91.72" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="227.77" stroke-dasharray="56,171.77"/>
+                <script><![CDATA[
+                (function(s,i,u,o,c,w,d,t,n,x,e,p,a,b){(a=document.getElementById(i.root)).svgatorPlayer={ready:(function(a){b=[];return function(c){return c?(b.push(c),a.svgatorPlayer):b}})(a)};w[o]=w[o]||{};w[o][s]=w[o][s]||[];w[o][s].push(i);e=d.createElementNS(n,t);e.async=true;e.setAttributeNS(x,'href',[u,s,'.','j','s','?','v','=',c].join(''));e.setAttributeNS(null,'src',[u,s,'.','j','s','?','v','=',c].join(''));p=d.getElementsByTagName(t)[0];p.parentNode.insertBefore(e,p);})('91c80d77',{"root":"hamburger-minified","version":"2022-05-04","animations":[{"elements":{"hamburger-minified-u-first":{"stroke-dashoffset":[{"t":0,"v":208.02,"e":[0.645,0.045,0.355,1]},{"t":800,"v":58.61}],"stroke-dasharray":[{"t":0,"v":[56,152.02],"e":[0.645,0.045,0.355,1]},{"t":800,"v":[58.61,149.41]}]},"hamburger-minified-u-second":{"stroke-dashoffset":[{"t":0,"v":56,"e":[0.325,0.005,0.9,0.995]},{"t":800,"v":392.26}],"stroke-dasharray":[{"t":0,"v":[56,336.26],"e":[0.325,0.005,0.9,0.995]},{"t":800,"v":[315.41,76.85]}]},"hamburger-minified-u-third":{"stroke-dashoffset":[{"t":0,"v":227.77,"e":[0.645,0.045,0.355,1]},{"t":800,"v":58.61}],"stroke-dasharray":[{"t":0,"v":[56,171.77],"e":[0.645,0.045,0.355,1]},{"t":800,"v":[58.61,169.16]}]}},"s":"MDPA1YzhhMzE3MYzg0RzgxNzA4CMzc4N2U3ZDMDxQTQ5NDdSM2HYzZkEzYjMxNKzM3ODgxNzQ3CMjgzNzhJN2VMJN2QzMTQ5NDGBTM2IzMTc4OHDM3NDgxNzA4GMzc4N2U3ZDgFyMzE0OTQwQzRNiWDMxNzU3OPDdiN2IzMTQ5FNDAzYjMxNzAV3YjgzSzc0STRgxN2Q3MFI4MJzc0MzE0OTc1ENzA3YjgyNzQLzYjMxODI3ZjHc0NzQ3MzMxNJDk0MDNiMzE3INTdmODIzMTQV5NDBHM2YzZjAhj"}],"options":"MDDAyMzgzMmE3YAjdjNjk3YTdjCMmE0MjJhNmJTTNzQ3MTZiNzEMyYTM0MmE2YKjc0NzE2YjczCTzJhNDIyYTdOhNmQ3ZTZkN2KE3YjZkMmE4NUVk/"},'https://cdn.svgator.com/ply/','__SVGATOR_PLAYER__','2022-05-04',window,document,'script','http://www.w3.org/2000/svg','http://www.w3.org/1999/xlink')
+                ]]></script>
+                </svg>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link home" aria-current="page" href="home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link about" href="about">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link services" href="services">services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link projects" href="projects">projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link blog" href="blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link gallery" href="images">gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link contact" href="contactus">contact</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li> -->
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+    <!-- navbar-collapse in medium/small devices -->
+    <div class="navbarCollapseMd hide-on-lg" id="navbarCollapseMd">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link home" aria-current="page" href="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link about" href="about">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link services" href="services">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link projects" href="projects">projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link blog" href="blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link contact" href="contactus">contact</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+        
+      </ul>
+    </div>
+
+        <!-- banner slider -->
+        <section class="hero-slider hero-style">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-inner slide-bg-image" data-background="assets/img/banner/img-4.jpg">
+                  <div class="container">
+                    <div data-swiper-parallax="300" class="slide-title">
+                      <h2>Our Legacy</h2>
+                    </div>
+                    <div data-swiper-parallax="400" class="slide-text">
+                      <p>EDSCO's approach to every project is marked by a holistic, detail-oriented, and anticipated vision. The wide array of ervices provided by
+                          the company from designtoconstruction services ensureaconsistentfiowqf orkfromthe project's initial its completion.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div data-swiper-parallax="500" class="slide-btns">
+                      <a href="#" class="theme-btn-s2">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end slide-inner -->
+              </div>
+              <!-- end swiper-slide -->
+        
+              <div class="swiper-slide">
+                <div class="slide-inner slide-bg-image" data-background="assets/img/banner/img-6.jpg">
+                  <div class="container">
+                    <div data-swiper-parallax="300" class="slide-title">
+                      <h2>Deiver Excellence</h2>
+                    </div>
+                    <div data-swiper-parallax="400" class="slide-text">
+                      <p>E ry e i e asbeen designed from theground up (workflow systems, implementation of expertise in eryarea, technologies
+                          implement localandin natitna standards that esult in successful and rofitable outcomes) thereby aligning'lt o</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div data-swiper-parallax="500" class="slide-btns">
+                      <a href="#" class="theme-btn-s2">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- end slide-inner -->
+              </div>
+              <!-- end swiper-slide -->
+            </div>
+            <!-- end swiper-wrapper -->
+        
+            <!-- swipper controls -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+        
+          <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> -->
+        <!-- banner slider END -->
+  </header>
   <main>
     <div data-scroll id="height">
-    <header id="header-home">
-      <!-- social media div -->
-      <div class="sc-media-cnct-div hide-on-md hide-on-sm">
-        <div class="sc-media">
-          <ul>
-          <li>
-            <a class="facebook" href="https://www.facebook.com/archidecor.sa/">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <i class="fa-brands fa-square-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a class="youtube" href="https://www.youtube.com/channel/UCaWQY56iAAo4gkezyIH5NSA?view_as=subscriber">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a class="instagram" href="https://www.instagram.com/archidecor.sa">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <i class="fa-brands fa-square-instagram"></i>
-            </a>
-          </li>
-        </ul>
-        </div>
-      </div>
-      <!-- social media div  END-->
-
-      <!-- navbar -->
-        <nav class="navbar navbar-expand-lg" id="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="home"><img src="assets/img/logo/archidecorsa-logo.png" class="logo-img" alt="" srcset=""></a>
-
-              <div class="sandwitch-icon" onclick="showNav()">
-                <svg id="hamburger-minified" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 142 142" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="cursor:pointer"><path id="hamburger-minified-u-first" d="M43,50.28h70c9,0,18.79-2,18.79-11.81c0-6.9-7.25-12.84-17.41-9.08C106,32.49,97.7,44.3,91.72,50.28L50.28,91.72" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="208.02" stroke-dasharray="56,152.02"/><path id="hamburger-minified-u-second" d="M113,83v-42c0-6.627417-5.372583-12-12-12h-60c-6.627417,0-12,5.372583-12,12v60c0,6.627417,5.372583,12,12,12h60c6.627417,0,12-5.372583,12-12v-18c0-6.627417-5.372583-12-12-12h-58" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="56" stroke-dasharray="56,336.26"/><path id="hamburger-minified-u-third" d="M99,91.72h-56c-24.45,0-37.24-12.28-37.24-28.13c0-19.66,24.08-33.75,44.52-13.31L91.72,91.72" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="227.77" stroke-dasharray="56,171.77"/>
-                  <script><![CDATA[
-                  (function(s,i,u,o,c,w,d,t,n,x,e,p,a,b){(a=document.getElementById(i.root)).svgatorPlayer={ready:(function(a){b=[];return function(c){return c?(b.push(c),a.svgatorPlayer):b}})(a)};w[o]=w[o]||{};w[o][s]=w[o][s]||[];w[o][s].push(i);e=d.createElementNS(n,t);e.async=true;e.setAttributeNS(x,'href',[u,s,'.','j','s','?','v','=',c].join(''));e.setAttributeNS(null,'src',[u,s,'.','j','s','?','v','=',c].join(''));p=d.getElementsByTagName(t)[0];p.parentNode.insertBefore(e,p);})('91c80d77',{"root":"hamburger-minified","version":"2022-05-04","animations":[{"elements":{"hamburger-minified-u-first":{"stroke-dashoffset":[{"t":0,"v":208.02,"e":[0.645,0.045,0.355,1]},{"t":800,"v":58.61}],"stroke-dasharray":[{"t":0,"v":[56,152.02],"e":[0.645,0.045,0.355,1]},{"t":800,"v":[58.61,149.41]}]},"hamburger-minified-u-second":{"stroke-dashoffset":[{"t":0,"v":56,"e":[0.325,0.005,0.9,0.995]},{"t":800,"v":392.26}],"stroke-dasharray":[{"t":0,"v":[56,336.26],"e":[0.325,0.005,0.9,0.995]},{"t":800,"v":[315.41,76.85]}]},"hamburger-minified-u-third":{"stroke-dashoffset":[{"t":0,"v":227.77,"e":[0.645,0.045,0.355,1]},{"t":800,"v":58.61}],"stroke-dasharray":[{"t":0,"v":[56,171.77],"e":[0.645,0.045,0.355,1]},{"t":800,"v":[58.61,169.16]}]}},"s":"MDPA1YzhhMzE3MYzg0RzgxNzA4CMzc4N2U3ZDMDxQTQ5NDdSM2HYzZkEzYjMxNKzM3ODgxNzQ3CMjgzNzhJN2VMJN2QzMTQ5NDGBTM2IzMTc4OHDM3NDgxNzA4GMzc4N2U3ZDgFyMzE0OTQwQzRNiWDMxNzU3OPDdiN2IzMTQ5FNDAzYjMxNzAV3YjgzSzc0STRgxN2Q3MFI4MJzc0MzE0OTc1ENzA3YjgyNzQLzYjMxODI3ZjHc0NzQ3MzMxNJDk0MDNiMzE3INTdmODIzMTQV5NDBHM2YzZjAhj"}],"options":"MDDAyMzgzMmE3YAjdjNjk3YTdjCMmE0MjJhNmJTTNzQ3MTZiNzEMyYTM0MmE2YKjc0NzE2YjczCTzJhNDIyYTdOhNmQ3ZTZkN2KE3YjZkMmE4NUVk/"},'https://cdn.svgator.com/ply/','__SVGATOR_PLAYER__','2022-05-04',window,document,'script','http://www.w3.org/2000/svg','http://www.w3.org/1999/xlink')
-                  ]]></script>
-                  </svg>
-              </div>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link home" aria-current="page" href="home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link about" href="about">about</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link services" href="services">services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link projects" href="projects">projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link blog" href="blog">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link gallery" href="images">gallery</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link contact" href="contactus">contact</a>
-                  </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li> -->
-                  
-                </ul>
-              </div>
-            </div>
-          </nav>
-      <!-- navbar-collapse in medium/small devices -->
-      <div class="navbarCollapseMd hide-on-lg" id="navbarCollapseMd">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link home" aria-current="page" href="home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link about" href="about">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link services" href="services">services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link projects" href="projects">projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link blog" href="blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link contact" href="contactus">contact</a>
-          </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li> -->
-          
-        </ul>
-      </div>
-
-          <!-- banner slider -->
-          <section class="hero-slider hero-style">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="slide-inner slide-bg-image" data-background="assets/img/banner/img-4.jpg">
-                    <div class="container">
-                      <div data-swiper-parallax="300" class="slide-title">
-                        <h2>Our Legacy</h2>
-                      </div>
-                      <div data-swiper-parallax="400" class="slide-text">
-                        <p>EDSCO's approach to every project is marked by a holistic, detail-oriented, and anticipated vision. The wide array of ervices provided by
-                            the company from designtoconstruction services ensureaconsistentfiowqf orkfromthe project's initial its completion.</p>
-                      </div>
-                      <div class="clearfix"></div>
-                      <div data-swiper-parallax="500" class="slide-btns">
-                        <a href="#" class="theme-btn-s2">Explore</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end slide-inner -->
-                </div>
-                <!-- end swiper-slide -->
-          
-                <div class="swiper-slide">
-                  <div class="slide-inner slide-bg-image" data-background="assets/img/banner/img-6.jpg">
-                    <div class="container">
-                      <div data-swiper-parallax="300" class="slide-title">
-                        <h2>Deiver Excellence</h2>
-                      </div>
-                      <div data-swiper-parallax="400" class="slide-text">
-                        <p>E ry e i e asbeen designed from theground up (workflow systems, implementation of expertise in eryarea, technologies
-                            implement localandin natitna standards that esult in successful and rofitable outcomes) thereby aligning'lt o</p>
-                      </div>
-                      <div class="clearfix"></div>
-                      <div data-swiper-parallax="500" class="slide-btns">
-                        <a href="#" class="theme-btn-s2">Explore</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end slide-inner -->
-                </div>
-                <!-- end swiper-slide -->
-              </div>
-              <!-- end swiper-wrapper -->
-          
-              <!-- swipper controls -->
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </section>
-          
-            <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script> -->
-          <!-- banner slider END -->
-    </header>
+    
 
 <!--==================================================================
    section-1 about
@@ -535,21 +536,135 @@ function showNum(element, a) {
         Small or big, no matter what. Every client of Archi décor is treated with keen attention always. We believe being a family brings the most successful and interesting interior outputs. Hence, every client is handled here with extreme care to meet all the needs and expectations in the best way possible. Let’s have a look at our content clients:
       </p>
     </div><!-- just comment for hide in frontednd coz this function not completed -->
+    
+  <div class="scroll-container">
     <div class="button-row row my-5 d-flex">
-      <button class="filter-button" data-category="all">All</button>
-      <button class="filter-button" data-category="food">Food and Beverages</button>
+      <button class="filter-button" style="margin-left: 17px;" data-category="all">All</button>
       <button class="filter-button" data-category="fasion">Fashion and Footware</button>
       <button class="filter-button" data-category="beauty">Beauty Shop</button>
+      <button class="filter-button" data-category="food">Food and Beverages</button>
       <button class="filter-button" data-category="accessories">Accessories</button>
       <button class="filter-button" data-category="sports">Sports</button>
+      <button class="filter-button" data-category="pharmacy">Pharmacy</button>
       <button class="filter-button" data-category="Telecommunications">Telecommunications</button>
+      <button class="filter-button" data-category="entertainment">Entertainment</button>
       <button class="filter-button" data-category="office">Office</button>
+      <button class="filter-button" data-category="health">Health Care</button>
+    </div>
     </div>
     <div class="row" id="logos-row">
+<script>
+  // Add dragging effect to scroll horizontally
+let isDown = false;
+let startX;
+let scrollLeft;
+
+document.querySelector('.scroll-container').addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - document.querySelector('.scroll-container').offsetLeft;
+    scrollLeft = document.querySelector('.scroll-container').scrollLeft;
+});
+
+document.querySelector('.scroll-container').addEventListener('mouseleave', () => {
+    isDown = false;
+});
+
+document.querySelector('.scroll-container').addEventListener('mouseup', () => {
+    isDown = false;
+});
+
+document.querySelector('.scroll-container').addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - document.querySelector('.scroll-container').offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scroll speed
+    document.querySelector('.scroll-container').scrollLeft = scrollLeft - walk;
+});
+
+</script>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="pharmacy">
+        <div class="card">
+          <img src="assets/img/logo/clients/pharmacy/boots.png" alt="">
+          <div class="pos-abs-cat">pharmacy</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="telecommunication">
+        <div class="card">
+          <img src="assets/img/logo/clients/telecommunication/axiom-telecom.png" alt="">
+          <div class="pos-abs-cat">telecommunication</div>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="entertainment">
+        <div class="card">
+          <img src="assets/img/logo/clients/entertainment/images.png" alt="">
+          <div class="pos-abs-cat">entertainment</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="office">
+        <div class="card">
+          <img src="assets/img/logo/clients/office/alshaya.png" alt="">
+          <div class="pos-abs-cat">office</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="office">
+        <div class="card">
+          <img src="assets/img/logo/clients/office/West_Elm_logo.png" alt="">
+          <div class="pos-abs-cat">office</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="health">
+        <div class="card">
+          <img src="assets/img/logo/clients/health/Curves-Logo.png" alt="">
+          <div class="pos-abs-cat">health</div>
+        </div>
+      </div>
 
       <div class="col-lg-3 col-md-4 col-6" data-category="food">
         <div class="card">
           <img src="assets/img/logo/clients/starbucks.png" alt="">
+          <div class="pos-abs-cat">food</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="assets/img/logo/clients/food/baskin-robbins-logo.png" alt="">
+          <div class="pos-abs-cat">food</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="entertainment">
+        <div class="card">
+          <img src="assets/img/logo/clients/entertainment/tekzone.png" alt="">
+          <div class="pos-abs-cat">entertainment</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="assets/img/logo/clients/food/coffee bean.png" alt="">
+          <div class="pos-abs-cat">food</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="assets/img/logo/clients/food/fresh-meal.png" alt="">
+          <div class="pos-abs-cat">food</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="assets/img/logo/clients/food/IHOP_Restaurant_logo.svg.png" alt="">
           <div class="pos-abs-cat">food</div>
         </div>
       </div>
@@ -575,10 +690,416 @@ function showNum(element, a) {
         </div>
       </div>
 
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="assets/img/logo/clients/food/Pinkberry_logo.svg.png" alt="">
+          <div class="pos-abs-cat">food</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="assets/img/logo/clients/food/Raising_Cane's_Chicken_Fingers_logo.svg.png" alt="">
+          <div class="pos-abs-cat">food</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="assets/img/logo/clients/food/Shake-Shack-Emblem.png" alt="">
+          <div class="pos-abs-cat">food</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="assets/img/logo/clients/food/starbucks reserve.png" alt="">
+          <div class="pos-abs-cat">food</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="assets/img/logo/clients/food/Texas_Roadhouse.svg.png" alt="">
+          <div class="pos-abs-cat">food</div>
+        </div>
+      </div>
+
       <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
         <div class="card">
           <img src="assets/img/logo/clients/h&m-logo.png" alt="">
           <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/CLAUDIE PIERLOT.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/DEBENHAMS.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/DOROTHY PERKINS.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/esprit-logo.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/evans.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/Foot Locker_.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/jackwills-logo-2021.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/justice.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/KURT GEIGER.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/LACOSTE.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/maje.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/marina-rinaldi.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/Michael_Kors_(brand)_logo.svg.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/milano.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/next.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/oasis.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/Payless_Logo.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/River-Island-Logo.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/sandro.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/TED BAKER.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/TOpSHOp TOPMAN.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/TORY BURCH.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/Wallis.svg.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/warehouse-logo-vector.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/bhs.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div><!-- fasion END -->
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/jo-malone-london-.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/bath-and-body-works-logo.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/kilian-perfume-logo-FCFC8FE20E-seeklogo.com.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/Lancome-logo.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/monkl.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/mothrcare.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/MUJI_logo.svg.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/le labo.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/LOccitane-logo.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/Logo-Guerlain.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/MAC-Cosmetics-logo.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/NARS_Cosmetics_logo.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/NYX-logo.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/sbx.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/SEPHORA.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/URBANDECAY.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/vavavoom-3.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/Victoria-Secret-Logo.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/wojooh.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/yessaintlaurent.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="accessories">
+        <div class="card">
+          <img src="assets/img/logo/clients/accessories/Claires_Stores_Logo.png" alt="">
+          <div class="pos-abs-cat">accessories</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="accessories">
+        <div class="card">
+          <img src="assets/img/logo/clients/accessories/icing.png" alt="">
+          <div class="pos-abs-cat">accessories</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="accessories">
+        <div class="card">
+          <img src="assets/img/logo/clients/accessories/Samsonite-Logo.png" alt="">
+          <div class="pos-abs-cat">accessories</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="accessories">
+        <div class="card">
+          <img src="assets/img/logo/clients/accessories/SOLARIS.png" alt="">
+          <div class="pos-abs-cat">accessories</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="accessories">
+        <div class="card">
+          <img src="assets/img/logo/clients/accessories/Swarovski-Logo-1988.png" alt="">
+          <div class="pos-abs-cat">accessories</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/make up for ever.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="beauty">
+        <div class="card">
+          <img src="assets/img/logo/clients/beauty/mikyajy.png" alt="">
+          <div class="pos-abs-cat">beauty</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="accessories">
+        <div class="card">
+          <img src="assets/img/logo/clients/accessories/vision-express-logo.png" alt="">
+          <div class="pos-abs-cat">accessories</div>
         </div>
       </div>
 
@@ -588,18 +1109,22 @@ function showNum(element, a) {
           <div class="pos-abs-cat">accessories</div>
         </div>
       </div>
-
-      <div class="col-lg-3 col-md-4 col-6" data-category="perfume">
-        <div class="card">
-          <img src="assets/img/logo/clients/jo-malone-london-.png" alt="">
-          <div class="pos-abs-cat">perfume</div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-6" data-category="accessories">
+      <!-- <div class="col-lg-3 col-md-4 col-6" data-category="accessories">
         <div class="card">
           <img src="assets/img/logo/clients/heuer-hd-logo.png" alt="">
           <div class="pos-abs-cat">accessories</div>
+        </div>
+      </div> -->
+      <div class="col-lg-3 col-md-4 col-6" data-category="sports">
+        <div class="card">
+          <img src="assets/img/logo/clients/sports/stadium.png" alt="">
+          <div class="pos-abs-cat">sports</div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6" data-category="sports">
+        <div class="card">
+          <img src="assets/img/logo/clients/sports/Billabong-logo.png" alt="">
+          <div class="pos-abs-cat">sports</div>
         </div>
       </div>
 
