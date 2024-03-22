@@ -173,24 +173,7 @@
             this.DOM.scrollable.style.transform = `translate3d(0,${-1*this.renderedStyles.translationY.previous}px,0)`;
         }
         setSize() {
-            // set the heigh of the body in order to keep the scrollbar on the page
-            var element = document.getElementById("height");
-            var elementa = document.querySelector(".heighta");
-            var elementb = document.querySelector(".heightb");
-            var elementc = document.querySelector(".heightc");
-            var elementd = document.querySelector(".heightd");
-
-    
-
-    // Get the height of the element in pixels
-    var heighta = elementa.offsetHeight+elementb.offsetHeight+elementc.offsetHeight+elementd.offsetHeight;
-    var baseH=element.offsetHeight;
-    var heightInPixels = element.offsetHeight-heighta;
-
-    // Log the height to the console
-    console.log("Height of the element in pixels: " + baseH);
-
-    body.style.height = `${heightInPixels}px`;
+            body.style.height = `${this.DOM.scrollable.scrollHeight}px`;
         }
         style() {
             // the <main> needs to "stick" to the screen and not scroll
