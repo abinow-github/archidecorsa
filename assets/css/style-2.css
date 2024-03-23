@@ -1053,6 +1053,15 @@ footer .footer-widget.a{/* footer a tag hover */
     margin-top: 30px;
   }
 }
+@media screen and (min-width:765px){
+  .project-details .col-lg-6.cnt-col{
+    max-height: 80vh;
+    overflow: scroll;
+  }
+  .project-details .col-lg-6.cnt-col::-webkit-scrollbar{
+    display: none;
+  }
+}
 /*==================================================================
                         project-details.html END
 ==================================================================*/
