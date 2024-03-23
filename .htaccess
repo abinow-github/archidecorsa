@@ -6,16 +6,17 @@ RewriteRule ^about$ about.html [L]
 RewriteRule ^contact$ contacts.html [L]
 RewriteRule ^contactus$ contacts.html [L]
 
-RewriteRule ^gallery$ gallery.html [L]
-RewriteRule ^images$ gallery.html [L]
+RewriteRule ^gallery$ gallery.php [L]
+RewriteRule ^images$ gallery.php [L]
 
 RewriteRule ^services$ services.html [L]
-RewriteRule ^projects$ projects.html [L]
+RewriteRule ^projects$ projects.php [L]
 
 RewriteRule ^blog$ blog.html [L]
 RewriteRule ^blog-details$ blog-details.html [L]
 
-RewriteRule ^project-details$ project-details.html [L]
+RewriteRule ^project$ .html [L]
+RewriteRule ^project/([^/]+)/? project-details.php?url=$1 [L,QSA]
 
 
 RewriteRule ^interior-fit-out$ interior-fit-out.html [L]

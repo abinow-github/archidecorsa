@@ -18,10 +18,6 @@
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style-2.css">
-    <link rel="stylesheet" href="gallery/css/magnific-popup.css">
-    <link rel="stylesheet" href="gallery/css/slick.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
 
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -115,7 +111,7 @@
 
   <!-- banner -->
   <div class="banner">
-    <h1>Galley</h1>
+    <h1>Projects</h1>
     <ul class="circles">
       <li></li>
       <li></li>
@@ -137,24 +133,116 @@
 <!--==================================================================
       section-1
 ==================================================================-->
-<section class="section-1">
+<section class="section-1 mb-0">
   <div class="container">
     <div class="row">
-
-        <div class="col-md-4">
-            <div class="thumbnail">
-                <a data-fancybox="video-gallery"  href="assets/img/service/construction-works.jpg" class="fancybox" rel="ligthbox"><img src="assets/img/service/construction-works.jpg" class="zoom img-fluid "  alt=""></a>
-            </div>
-        </div>
-
+      <div class="col-lg-12 cnt-col">
+        <h5>We are overwhelmed to showcase our latest projects that are met with innovative ideas and skilled actions.</h5>
+      </div>
     </div>
   </div>
 </section>
 <!--==================================================================
       section-1
 ==================================================================-->
-<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+
+<!--==================================================================
+      section-2
+==================================================================-->
+<section class="project-section">
+    <div class="container">
+        <div class="row">
+        <?php
+        include('dashboard/root/db.php');
+
+              $sql ="SELECT * FROM  project ORDER BY id DESC";
+              $result =$mysqli->query($sql);
+              if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                $imageFilenames = explode(',', $row['images']);
+                $firstImage = trim($imageFilenames[0]);
+                $baseurl= BASE_URL;
+                $imagePath = "dashboard/images/project/" . $firstImage;
+              ?>
+
+            <div class="col-md-6 col-lg-3 col-10">
+                <a class="card" href="project/<?php echo $row['url']; ?>">
+                    <div class="img-div"><img src="<?php echo $imagePath; ?>" alt=""></div>
+                    <div class="card-body">
+                      <div class="name"><?php echo $row['title']; ?></div>
+                      <div class="sub-name"><?php echo $row['subtitle']; ?></div>
+                      <p class="p"><?php echo limitWords(strip_tags($row['txt']), 50); ?></p>
+                    </div>
+                    
+                  </a>
+            </div>
+
+            <?php 
+                }
+            }
+            // Function to limit words in a string
+function limitWords($string, $word_limit)
+{
+    $words = explode(" ", $string);
+    return implode(" ", array_splice($words, 0, $word_limit));
+}
+            ?>
+           
+
+            <div class="col-md-6 col-lg-3 col-10">
+                <a class="card" href="project-details">
+                    <div class="img-div"><img src="info/IBIS HOTEL.jpg" alt=""></div>
+                    <div class="card-body">
+                      <div class="name">Blue Bell Commercial</div>
+                      <div class="sub-name"></div>
+                      <p class="p">Blue Bell Commercial by ArchiDecor in Malappuram, Kerala, which is planned to provide an ideal work-life-play balance for now and for the future , With home for every need, this ideally planned space is the benchmark of how homes will be designed in the future. Blue Bell Commercial in Malappuram </p>
+                    </div>
+                    
+                  </a>
+            </div>
+
+            <div class="col-md-6 col-lg-3 col-10">
+                <a class="card" href="project-details">
+                    <div class="img-div"><img src="info/L'OCCITANE.png" alt=""></div>
+                    <div class="card-body">
+                      <div class="name">Blue Bell Commercial</div>
+                      <div class="sub-name"></div>
+                      <p class="p">Blue Bell Commercial by ArchiDecor in Malappuram, Kerala, which is planned to provide an ideal work-life-play balance for now and for the future , With home for every need, this ideally planned space is the benchmark of how homes will be designed in the future. Blue Bell Commercial in Malappuram </p>
+                    </div>
+                    
+                  </a>
+            </div>
+
+            <div class="col-md-6 col-lg-3 col-10">
+                <a class="card" href="project-details">
+                    <div class="img-div"><img src="info/STARBUCKS.jpg" alt=""></div>
+                    <div class="card-body">
+                      <div class="name">Blue Bell Commercial</div>
+                      <div class="sub-name">cofee</div>
+                      <p class="p">Blue Bell Commercial by ArchiDecor in Malappuram, Kerala, which is planned to provide an ideal work-life-play balance for now and for the future , With home for every need, this ideally planned space is the benchmark of how homes will be designed in the future. Blue Bell Commercial in Malappuram </p>
+                    </div>
+                    
+                  </a>
+            </div>
+
+            <div class="col-md-6 col-lg-3 col-10">
+                <a class="card" href="project-details">
+                    <div class="img-div"><img src="info/TIDEL PARK.jpg" alt=""></div>
+                    <div class="card-body">
+                      <div class="name">Blue Bell Commercial</div>
+                      <div class="sub-name"></div>
+                      <p class="p">Blue Bell Commercial by ArchiDecor in Malappuram, Kerala, which is planned to provide an ideal work-life-play balance for now and for the future , With home for every need, this ideally planned space is the benchmark of how homes will be designed in the future. Blue Bell Commercial in Malappuram </p>
+                    </div>
+                    
+                  </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--==================================================================
+      section-2
+==================================================================-->
 
 
 
@@ -165,47 +253,14 @@
 <footer class="footer-section" id="footer">
 </footer><script src="assets/js/footer.js"></script>
 
+    <!-- swiper -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 
-
-<script src="gallery/js/vendor/modernizr-3.5.0.min.js"></script>
-    <!-- Jquery, Popper, Bootstrap -->
-    <script src="gallery/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="gallery/js/popper.min.js"></script>
-    <script src="gallery/js/bootstrap.min.js"></script>
-    <!-- Jquery Mobile Menu -->
-    <script src="gallery/js/jquery.slicknav.min.js"></script>
-
-    <!-- Jquery Slick , Owl-Carousel Plugins -->
-    <script src="gallery/js/owl.carousel.min.js"></script>
-    <script src="gallery/js/slick.min.js"></script>
-    <!-- One Page, Animated-HeadLin -->
-    <script src="gallery/js/wow.min.js"></script>
-    <script src="gallery/js/jquery.magnific-popup.js"></script>
-
-    <!-- Date Picker -->
-    <script src="gallery/js/gijgo.min.js"></script>
-    <!-- Nice-select, sticky -->
-    <script src="gallery/js/jquery.nice-select.min.js"></script>
-    <script src="gallery/js/jquery.sticky.js"></script>
-    
-    <!-- counter , waypoint,Hover Direction -->
-    <script src="gallery/js/jquery.counterup.min.js"></script>
-    <script src="gallery/js/waypoints.min.js"></script>
-    <script src="gallery/js/jquery.countdown.min.js"></script>
-    <script src="gallery/js/hover-direction-snake.min.js"></script>
-
-    <!-- contact js -->
-    <script src="gallery/js/contact.js"></script>
-    <script src="gallery/js/jquery.form.js"></script>
-    <script src="gallery/js/jquery.validate.min.js"></script>
-    <script src="gallery/js/mail-script.js"></script>
-    <script src="gallery/js/jquery.ajaxchimp.min.js"></script>
-    
-    <!-- Jquery Plugins, main Jquery -->	
-    <script src="gallery/js/plugins.js"></script>
-    <script src="gallery/js/main.js"></script>
-
-    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Then include Slick slider script -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="assets/js/script.js"></script>
     <!-- bootsrap 5 -->

@@ -18,6 +18,10 @@
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style-2.css">
+    <link rel="stylesheet" href="gallery/css/magnific-popup.css">
+    <link rel="stylesheet" href="gallery/css/slick.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
 
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -109,45 +113,59 @@
 </ul>
 </div>
 
-
+  <!-- banner -->
+  <div class="banner">
+    <h1>Galley</h1>
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+</ul>
+  </div>
+  <!-- banner END -->
     </header>
     <!-- header END -->
     
 <!--==================================================================
       section-1
 ==================================================================-->
-<section class="project-details">
+<section class="section-1">
   <div class="container">
     <div class="row">
-        <div class="col-lg-6">
-            <div class="img-div">
-            <img src="info/Blue Bell Commercial.jpeg" class="w-100 " alt="">
+    <?php
+include("dashboard/root/db.php");
+              $sql ="SELECT * FROM  gallery ORDER BY id DESC";
+              $result =$mysqli->query($sql);
+              if ($result->num_rows > 0){
+                  while ($row=$result -> fetch_assoc())
+              {
+                
+              ?>
+        <div class="col-md-3 col-sm-4 col-6">
+            <div class="thumbnail">
+                <a data-fancybox="video-gallery"  href="dashboard/images/gallery/<?php echo $row ["image"]; ?>" class="fancybox" rel="ligthbox"><img src="dashboard/images/gallery/<?php echo $row ["image"]; ?>" class="zoom img-fluid "  alt=""></a>
+            </div>
         </div>
-        </div>
-        <div class="col-lg-6 cnt-col">
-            <h2 class="title">Blue Bell Commercial</h2>
-            <h4 class="sub-title">cofee</h4>
-            <p class="p">Blue Bell Commercial by ArchiDecor in Malappuram, Kerala, which is planned to provide an ideal work-life-play balance for now and for the future , With home for every need, this ideally planned space is the benchmark of how homes will be designed in the future. Blue Bell Commercial in Malappuram , It offers you the homes that you have always dream of but could never see for real, with unimaginable facilities, elegant designing ant artistic architecture.</p>
-            <p class="p">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-            </p>
-            <p class="p">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-            </p>
-            <p class="p">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-            </p>
-            <p class="p">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-            </p>
-        </div>
+        <?php
+              }
+            }
+                ?>
     </div>
   </div>
 </section>
 <!--==================================================================
       section-1
 ==================================================================-->
-
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 
 
 
@@ -158,14 +176,47 @@
 <footer class="footer-section" id="footer">
 </footer><script src="assets/js/footer.js"></script>
 
-    <!-- swiper -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- Then include Slick slider script -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="gallery/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="gallery/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="gallery/js/popper.min.js"></script>
+    <script src="gallery/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="gallery/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="gallery/js/owl.carousel.min.js"></script>
+    <script src="gallery/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="gallery/js/wow.min.js"></script>
+    <script src="gallery/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="gallery/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="gallery/js/jquery.nice-select.min.js"></script>
+    <script src="gallery/js/jquery.sticky.js"></script>
+    
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="gallery/js/jquery.counterup.min.js"></script>
+    <script src="gallery/js/waypoints.min.js"></script>
+    <script src="gallery/js/jquery.countdown.min.js"></script>
+    <script src="gallery/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="gallery/js/contact.js"></script>
+    <script src="gallery/js/jquery.form.js"></script>
+    <script src="gallery/js/jquery.validate.min.js"></script>
+    <script src="gallery/js/mail-script.js"></script>
+    <script src="gallery/js/jquery.ajaxchimp.min.js"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="gallery/js/plugins.js"></script>
+    <script src="gallery/js/main.js"></script>
+
+    
 
     <script src="assets/js/script.js"></script>
     <!-- bootsrap 5 -->
