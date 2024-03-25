@@ -189,53 +189,7 @@ function limitWords($string, $word_limit)
             ?>
            
 
-            <div class="col-md-6 col-lg-3 col-10">
-                <a class="card" href="project-details">
-                    <div class="img-div"><img src="info/IBIS HOTEL.jpg" alt=""></div>
-                    <div class="card-body">
-                      <div class="name">Blue Bell Commercial</div>
-                      <div class="sub-name"></div>
-                      <p class="p">Blue Bell Commercial by ArchiDecor in Malappuram, Kerala, which is planned to provide an ideal work-life-play balance for now and for the future , With home for every need, this ideally planned space is the benchmark of how homes will be designed in the future. Blue Bell Commercial in Malappuram </p>
-                    </div>
-                    
-                  </a>
-            </div>
-
-            <div class="col-md-6 col-lg-3 col-10">
-                <a class="card" href="project-details">
-                    <div class="img-div"><img src="info/L'OCCITANE.png" alt=""></div>
-                    <div class="card-body">
-                      <div class="name">Blue Bell Commercial</div>
-                      <div class="sub-name"></div>
-                      <p class="p">Blue Bell Commercial by ArchiDecor in Malappuram, Kerala, which is planned to provide an ideal work-life-play balance for now and for the future , With home for every need, this ideally planned space is the benchmark of how homes will be designed in the future. Blue Bell Commercial in Malappuram </p>
-                    </div>
-                    
-                  </a>
-            </div>
-
-            <div class="col-md-6 col-lg-3 col-10">
-                <a class="card" href="project-details">
-                    <div class="img-div"><img src="info/STARBUCKS.jpg" alt=""></div>
-                    <div class="card-body">
-                      <div class="name">Blue Bell Commercial</div>
-                      <div class="sub-name">cofee</div>
-                      <p class="p">Blue Bell Commercial by ArchiDecor in Malappuram, Kerala, which is planned to provide an ideal work-life-play balance for now and for the future , With home for every need, this ideally planned space is the benchmark of how homes will be designed in the future. Blue Bell Commercial in Malappuram </p>
-                    </div>
-                    
-                  </a>
-            </div>
-
-            <div class="col-md-6 col-lg-3 col-10">
-                <a class="card" href="project-details">
-                    <div class="img-div"><img src="info/TIDEL PARK.jpg" alt=""></div>
-                    <div class="card-body">
-                      <div class="name">Blue Bell Commercial</div>
-                      <div class="sub-name"></div>
-                      <p class="p">Blue Bell Commercial by ArchiDecor in Malappuram, Kerala, which is planned to provide an ideal work-life-play balance for now and for the future , With home for every need, this ideally planned space is the benchmark of how homes will be designed in the future. Blue Bell Commercial in Malappuram </p>
-                    </div>
-                    
-                  </a>
-            </div>
+           
 
         </div>
     </div>

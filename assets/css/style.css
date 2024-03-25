@@ -66,7 +66,7 @@
 
 :root{
   /* --primary-color:#9a1b39; */
-  --primary-color:#dc5675;
+  --primary-color:#da757d;
   --secondary-color:#7dc444;
 }
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -261,6 +261,15 @@ header{
   }
 }
 
+/* animation for insta follow btn hover */
+@keyframes insta {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(90deg);
+  }
+}
 
 
 
@@ -1263,7 +1272,7 @@ a:hover {
       position: relative;
       transition: 0.4s;
       img{
-        filter: invert(50%) sepia(11%) saturate(322%) hue-rotate(182deg) brightness(89%) contrast(93%);
+        /* filter: invert(50%) sepia(11%) saturate(322%) hue-rotate(182deg) brightness(89%) contrast(93%); */
         width: 80%;
         height: 80%;
         object-fit: contain;
@@ -1758,6 +1767,48 @@ footer .footer-widget.a{/* footer a tag hover */
     .footer-cta{
       display: none;
     }
+  }
+}
+footer .insta-row{/* instagram section */
+  justify-content: center;
+  .card{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    margin: 2px;
+  }
+  img{
+    object-fit: cover;
+  }
+}.row.insta-follow{
+  justify-content: center;
+  padding-top: 10px;
+  .follow{
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .follow::before{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 300%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    transition: 0.5s;
+  }
+  .follow:hover::before{
+    transform: rotate(70deg);
   }
 }
 

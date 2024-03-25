@@ -165,12 +165,18 @@ $_SESSION['prev_url'] = $prevUrl;
     color:#515157c5;
   }
 </style>
+<?php 
+$imageFilenames = explode(',', $query_data['images']);
+$firstImage = trim($imageFilenames[0]);
+$baseurl= BASE_URL;
+$imagePath = "../dashboard/images/project/" . $firstImage;
+?>
 <section class="project-details">
   <div class="container">
     <div class="row">
         <div class="col-lg-6">
             <div class="img-div">
-            <img src="<?php echo BASE_URL; ?>/dashboard/images/project/<?php echo $query_data['images']; ?>" class="w-100 " alt="">
+            <img src="<?php echo $imagePath ?>" class="w-100 " alt="">
         </div>
         </div>
         <div class="col-lg-6 cnt-col">

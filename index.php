@@ -431,87 +431,34 @@ function showNum(element, a) {
 
   
  
+        <?php
+        include('dashboard/root/db.php');
 
+              $sql ="SELECT * FROM  project ORDER BY id DESC LIMIT 5";
+              $result =$mysqli->query($sql);
+              if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                $imageFilenames = explode(',', $row['images']);
+                $firstImage = trim($imageFilenames[0]);
+                $baseurl= BASE_URL;
+                $imagePath = "dashboard/images/project/" . $firstImage;
+              ?>
         <div class="slide">
-          <a class="card" href="projects">
-            <div class="img-div"><img src="info/Blue Bell Commercial.jpeg" alt="" class="project-img">
+          <a class="card" href="project/<?php echo $row['url']; ?>">
+            <div class="img-div"><img src="<?php echo $imagePath; ?>" alt="" class="project-img">
               <div class="pos-abs-overlay">
                 <img src="assets/img/logo/archidecorsa-logo.png" alt="" srcset="">
               </div></div>
             <div class="card-body">
-              <div class="popertie-name">Blue Bell Commercial</div>
-              <div class="price"></div>
-              
-              
+              <div class="popertie-name"><?php echo $row['title']; ?></div>
+              <div class="price"><?php echo $row['subtitle']; ?></div>
             </div>
-            
           </a>
         </div>
-
-        <div class="slide heighta">
-          <a class="card">
-            <div class="img-div"><img src="info/IBIS HOTEL.jpg" alt="" class="project-img">
-              <div class="pos-abs-overlay">
-                <img src="assets/img/logo/archidecorsa-logo.png" alt="" srcset="">
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="popertie-name">IBIS HOTEL</div>
-              <div class="price"></div>
-              
-              
-            </div>
-
-          </a>
-        </div>
-
-        <div class="slide heightb">
-          <a class="card">
-            <div class="img-div"><img src="info/L-OCCITANE.png" alt="" class="project-img">
-              <div class="pos-abs-overlay">
-                <img src="assets/img/logo/archidecorsa-logo.png" alt="" srcset="">
-              </div></div>
-            <div class="card-body">
-              <div class="popertie-name">L'OCCITANE</div>
-              <div class="price"></div>
-              
-              
-            </div>
-            
-          </a>
-        </div>
-
-        <div class="slide heightc">
-          <a class="card">
-            <div class="img-div"><img src="info/STARBUCKS.jpg" alt="" class="project-img">
-              <div class="pos-abs-overlay">
-                <img src="assets/img/logo/archidecorsa-logo.png" alt="" srcset="">
-              </div></div>
-            <div class="card-body">
-              <div class="popertie-name">STARBUCKS</div>
-              <div class="price">coffee</div>
-              
-              
-            </div>
-            
-          </a>
-        </div>
-
-        <div class="slide heightd">
-          <a class="card">
-            <div class="img-div"><img src="info/TIDEL PARK.jpg" alt="" class="project-img">
-              <div class="pos-abs-overlay">
-                <img src="assets/img/logo/archidecorsa-logo.png" alt="" srcset="">
-              </div></div>
-            <div class="card-body">
-              <div class="popertie-name">TIDEL PARK</div>
-              <div class="price"></div>
-              
-              
-            </div>
-            
-          </a>
-        </div>
+        <?php 
+                }
+            } 
+            ?>
         
 
         
@@ -540,8 +487,8 @@ function showNum(element, a) {
   <div class="scroll-container">
     <div class="button-row row my-5 d-flex">
       <button class="filter-button" style="margin-left: 17px;" data-category="all">All</button>
-      <button class="filter-button" data-category="fasion">Fashion and Footware</button>
-      <button class="filter-button" data-category="beauty">Beauty Shop</button>
+      <button class="filter-button" data-category="fasion">Fashion and Footweare</button>
+      <button class="filter-button" data-category="beauty">Beauty</button>
       <button class="filter-button" data-category="food">Food and Beverages</button>
       <button class="filter-button" data-category="accessories">Accessories</button>
       <button class="filter-button" data-category="sports">Sports</button>
@@ -706,6 +653,13 @@ document.querySelector('.scroll-container').addEventListener('mousemove', (e) =>
         </div>
       </div>
 
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/Foot Locker_.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
       <div class="col-lg-3 col-md-4 col-6" data-category="food">
         <div class="card">
           <img src="assets/img/logo/clients/food/Raising_Cane's_Chicken_Fingers_logo.svg.png" alt="">
@@ -731,6 +685,13 @@ document.querySelector('.scroll-container').addEventListener('mousemove', (e) =>
         <div class="card">
           <img src="assets/img/logo/clients/food/Texas_Roadhouse.svg.png" alt="">
           <div class="pos-abs-cat">food</div>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="assets/img/logo/clients/fasion/marina-rinaldi.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
         </div>
       </div>
 
@@ -778,13 +739,6 @@ document.querySelector('.scroll-container').addEventListener('mousemove', (e) =>
 
       <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
         <div class="card">
-          <img src="assets/img/logo/clients/fasion/Foot Locker_.png" alt="">
-          <div class="pos-abs-cat">fasion</div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
-        <div class="card">
           <img src="assets/img/logo/clients/fasion/jackwills-logo-2021.png" alt="">
           <div class="pos-abs-cat">fasion</div>
         </div>
@@ -818,12 +772,7 @@ document.querySelector('.scroll-container').addEventListener('mousemove', (e) =>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
-        <div class="card">
-          <img src="assets/img/logo/clients/fasion/marina-rinaldi.png" alt="">
-          <div class="pos-abs-cat">fasion</div>
-        </div>
-      </div>
+      
 
       <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
         <div class="card">

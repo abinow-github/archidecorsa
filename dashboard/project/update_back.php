@@ -33,9 +33,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die('Error updating caption: ' . mysqli_error($mysqli));
     }
 
+    // Delete old images
+    $deleteOldImagesQuery = "SELECT images FROM project WHERE id = '$imageId'";
+    $oldImagesResult = mysqli_query($mysqli, $deleteOldImagesQuery);
+    $oldImages = mysqli_fetch_assoc($oldImagesResult)['images'];
+
+    // Explode the string to get individual image names
+    $oldImageNames = explode(',', $oldImages);
+    foreach ($oldImageNames as $imageName) {
+        $imagePath = "../images/project/" . $imageName;
+        if (file_exists($imagePath)) {
+            unlink($imagePath); // Delete the old image file
+        }
+    }
+
     // Check if new images are provided
     if (!empty($_FILES['new_images']['tmp_name'][0])) {
         // Your existing image upload and update logic here
+        $imageNames = uploadImages($mysqli, $_FILES['new_images'], $imageId);
+        // Update the database with the new image names
+        $imageNamesString = implode(',', $imageNames);
+        $updateImagesQuery = "UPDATE project SET images = '$imageNamesString' WHERE id = '$imageId'";
+        if (!mysqli_query($mysqli, $updateImagesQuery)) {
+            die('Error updating images: ' . mysqli_error($mysqli));
+        }
     }
 
     // Redirect back to the edit page
@@ -56,5 +77,23 @@ function makeUrlUnique($mysqli, $url) {
         $result = $mysqli->query($query);
             return $url;
     }
+}
+
+// Function to upload images and return their names
+function uploadImages($mysqli, $files, $imageId) {
+    $imageNames = array();
+    foreach ($files['tmp_name'] as $key => $tmp_name) {
+        $target_dir = "../images/project/";
+        $imageFileType = strtolower(pathinfo($files["name"][$key], PATHINFO_EXTENSION));
+        $newImageName = 'image_' . $imageId . '_' . uniqid() . '.' . $imageFileType; // Append unique identifier to image name
+        $target_file = $target_dir . $newImageName;
+
+        if (move_uploaded_file($tmp_name, $target_file)) {
+            $imageNames[] = $newImageName;
+        } else {
+            // Handle file upload errors here
+        }
+    }
+    return $imageNames;
 }
 ?>
