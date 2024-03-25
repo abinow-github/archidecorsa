@@ -31,7 +31,7 @@ if (isset($_SESSION['upload_error'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light w-100" style="position: fixed;top:0;height:100px;z-index:1;">
         <div class="container-fluid">
           <a class="navbar-brand" style="color:white">Dashboard</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,11 +44,12 @@ if (isset($_SESSION['upload_error'])) {
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img
-                    src="../user.png" style="filter: invert(81%) sepia(100%) saturate(2%) hue-rotate(196deg) brightness(110%) contrast(101%);"
+                    src="../user.png"
                     class="rounded-circle"
                     height="50"
-                    alt="Black and White Portrait of a Man"
+                    alt="bluestar"
                     loading="lazy"
+                    style="filter:invert(81%) sepia(100%) saturate(2%) hue-rotate(196deg) brightness(110%) contrast(101%)"
                   />
                 </a>
                 <ul class="dropdown-menu profile-menu" aria-labelledby="navbarScrollingDropdown">
@@ -65,15 +66,15 @@ if (isset($_SESSION['upload_error'])) {
       </nav>
    
 
-<div class="contents">
-    <div class="side-menu">
+<div class="contents" style="margin-top: 100px;">
+    <div class="side-menu" style="position: fixed;">
         <ul>
-            <li><a href="../project/">Project</a></li>
-            <li class="active"><a href="" style="color:#fff">gallery</a></li>
+            <li><a href="../project">Project</a></li>
+            <li class="active"><a href="../gallery">gallery</a></li>
         </ul>
     </div>
-    <div class="content">
-    <div class="container-fluid bg-clr-1" style="color:white;padding:10px"><h4> Create gallery </h4></div>
+    <div class="content" style="margin-left: 200px;">
+    <div class="container-fluid bg-clr-1" style="color:white;padding:10px"><h4> Add Gallery</h4></div>
     <div class="blog-content">
 				<div class="container">
 				 

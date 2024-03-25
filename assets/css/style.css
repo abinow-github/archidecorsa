@@ -18,7 +18,7 @@
 .loader {
   width: 40px;
   height: 30px;
-  --c:no-repeat linear-gradient(#cc4040 0 0);
+  --c:no-repeat linear-gradient(#da757d 0 0);
   background:
     var(--c) 0    100%/8px 30px,
     var(--c) 50%  100%/8px 20px,
@@ -66,7 +66,7 @@
 
 :root{
   /* --primary-color:#9a1b39; */
-  --primary-color:#da757d;
+  --primary-color:#03668e;
   --secondary-color:#7dc444;
 }
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');

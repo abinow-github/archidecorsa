@@ -60,6 +60,7 @@ if (isset($_SESSION['upload_error'])) {
                     height="50"
                     alt="bluestar"
                     loading="lazy"
+                    style="filter:invert(81%) sepia(100%) saturate(2%) hue-rotate(196deg) brightness(110%) contrast(101%)"
                   />
                 </a>
                 <ul class="dropdown-menu profile-menu" aria-labelledby="navbarScrollingDropdown">

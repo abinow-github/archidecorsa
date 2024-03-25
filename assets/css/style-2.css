@@ -503,13 +503,14 @@ header .navbarCollapseMd.show{
 }
 @media screen and (max-width:765px) {
   .banner{
+    height: 150px;
     padding: 10px;
     text-align: center;
     justify-content: center;
     h1{
       text-align: center;
       padding-left: 0;
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 }
