@@ -991,6 +991,28 @@ footer .insta-row{/* instagram section */
     }
   }
 }
+/* whatsapp and call btn */
+.whatsapp-btn,.call-btn{
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  border-radius: 8px;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-btn{
+  right: 20px;
+  background-color: #7dc444;
+}
+.call-btn{
+  left: 20px;
+  background-color: #2957c5;
+}
 
 
 

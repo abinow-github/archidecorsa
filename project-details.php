@@ -98,6 +98,9 @@ $_SESSION['prev_url'] = $prevUrl;
           <li class="nav-item">
             <a class="nav-link blog" href="<?php echo BASE_URL; ?>/blog">Blog</a>
           </li>
+  <li class="nav-item">
+    <a class="nav-link gallery" href="<?php echo BASE_URL; ?>/images">gallery</a>
+  </li>
           <li class="nav-item">
             <a class="nav-link contact" href="<?php echo BASE_URL; ?>/contactus">contact</a>
           </li>
@@ -134,6 +137,9 @@ $_SESSION['prev_url'] = $prevUrl;
   </li>
   <li class="nav-item">
     <a class="nav-link blog" href="<?php echo BASE_URL; ?>/blog">Blog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link gallery" href="<?php echo BASE_URL; ?>/images">gallery</a>
   </li>
   <li class="nav-item">
     <a class="nav-link contact" href="<?php echo BASE_URL; ?>/contactus">contact</a>
@@ -288,6 +294,7 @@ $imagePath = "../dashboard/images/project/" . $firstImage;
                       <li><a href="<?php echo BASE_URL; ?>/services" data-replace="Services" ><span>Services</span></a></li>
                       <li><a href="<?php echo BASE_URL; ?>/projects" data-replace="Projects" ><span>Projects</span></a></li>
                       <li><a href="<?php echo BASE_URL; ?>/blog" data-replace="Blog" ><span>Blog</span></a></li>
+                      <li><a href="<?php echo BASE_URL; ?>/images" data-replace="Gallery" ><span>Gallery</span></a></li>
                       <li><a href="<?php echo BASE_URL; ?>/contactus" data-replace="Contact" ><span>Contact</span></a></li>
                     </ul>
                 </div>
@@ -346,5 +353,8 @@ $imagePath = "../dashboard/images/project/" . $firstImage;
     <script src="<?php echo BASE_URL; ?>/assets/js/script.js"></script>
     <!-- bootsrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- whatsapp and call btn -->
+  <a href="https://wa.me/918042107382" class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:+918042107382" class="call-btn"><i class="fas fa-phone"></i></a>
 </body>
 </html>

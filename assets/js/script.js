@@ -2,17 +2,16 @@
 var load = document.getElementById("preloader");
 let header = document.getElementById("header-home");
 let heroslider = document.querySelector(".hero-slider");
-function isFullyLoaded() {
-    return header ;
+function isHeaderLoaded() {
+  return header !== null; // Check if the header element exists
 }
-window.onload = function () {
-    if (isFullyLoaded()) {
-        setTimeout(function () {
-            load.classList.add('hide');
-            heroslider.classList.add('show');
-        }, 1000);
-    }
-};
+// Check if header is loaded, and if so, add classes immediately
+if (isHeaderLoaded()) {
+  setTimeout(function () {
+      load.classList.add('hide');
+      heroslider.classList.add('show');
+  }, 500);
+}
 
 // HERO SLIDER
 var menu = [];
@@ -123,7 +122,7 @@ $(document).ready(function(){
         dots: false,
         pauseOnHover: false,
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 2
             }

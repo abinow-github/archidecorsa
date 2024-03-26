@@ -54,6 +54,9 @@
           <li class="nav-item">
             <a class="nav-link blog" href="blog">Blog</a>
           </li>
+  <li class="nav-item">
+    <a class="nav-link gallery" href="images">gallery</a>
+  </li>
           <li class="nav-item">
             <a class="nav-link contact" href="contactus">contact</a>
           </li>
@@ -90,6 +93,9 @@
   </li>
   <li class="nav-item">
     <a class="nav-link blog" href="blog">Blog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link gallery" href="images">gallery</a>
   </li>
   <li class="nav-item">
     <a class="nav-link contact" href="contactus">contact</a>
@@ -219,5 +225,8 @@ function limitWords($string, $word_limit)
     <script src="assets/js/script.js"></script>
     <!-- bootsrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- whatsapp and call btn -->
+  <a href="https://wa.me/918042107382" class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:+918042107382" class="call-btn"><i class="fas fa-phone"></i></a>
 </body>
 </html>

@@ -145,6 +145,9 @@
           <a class="nav-link blog" href="blog">Blog</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link gallery" href="images">gallery</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link contact" href="contactus">contact</a>
         </li>
         <!-- <li class="nav-item dropdown">
@@ -487,7 +490,7 @@ function showNum(element, a) {
   <div class="scroll-container">
     <div class="button-row row my-5 d-flex">
       <button class="filter-button" style="margin-left: 17px;" data-category="all">All</button>
-      <button class="filter-button" data-category="fasion">Fashion and Footweare</button>
+      <button class="filter-button" data-category="fasion">Fashion and Footwear</button>
       <button class="filter-button" data-category="beauty">Beauty</button>
       <button class="filter-button" data-category="food">Food and Beverages</button>
       <button class="filter-button" data-category="accessories">Accessories</button>
