@@ -1474,7 +1474,7 @@ a:hover {
 ==================================================================*/
 
 .footer-section {
-background: var(--primary-color);
+background: linear-gradient(45deg, #09394e, #2b2d6e);
 margin: 10px;
 position: relative;
 border-radius: 15px;
