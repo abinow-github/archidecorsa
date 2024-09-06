@@ -176,8 +176,9 @@
                       <h2>Our Legacy</h2>
                     </div>
                     <div data-swiper-parallax="400" class="slide-text">
-                      <p>EDSCO's approach to every project is marked by a holistic, detail-oriented, and anticipated vision. The wide array of ervices provided by
-                          the company from designtoconstruction services ensureaconsistentfiowqf orkfromthe project's initial its completion.</p>
+                      <p>
+                        archidecorsa's approach to every project is marked by a holistic, detail-oriented, and anticipated vision. The wide array of services provided by the company, from design to construction services, ensures a consistent flow from the project's initial to its completion
+                      </p>
                     </div>
                     <div class="clearfix"></div>
                     <div data-swiper-parallax="500" class="slide-btns">
@@ -196,8 +197,7 @@
                       <h2>Deiver Excellence</h2>
                     </div>
                     <div data-swiper-parallax="400" class="slide-text">
-                      <p>E ry e i e asbeen designed from theground up (workflow systems, implementation of expertise in eryarea, technologies
-                          implement localandin natitna standards that esult in successful and rofitable outcomes) thereby aligning'lt o</p>
+                      <p>Every service has been designed from the ground up (workflow systems, implementation of expertise in every area, technologies, regulations) to implement local and international standards that result in successful and profitable outcomes, thereby aligning with our goals.</p>
                     </div>
                     <div class="clearfix"></div>
                     <div data-swiper-parallax="500" class="slide-btns">
